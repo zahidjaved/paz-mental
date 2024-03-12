@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+
+.mystyle {
+  background: #000000;
+}
+
+/* FONTS STARTS */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat-ExtraBold.woff2") format("woff2"), url("Montserrat-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+img {
+  width: 100%;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+button {
+  width: 120px;
+  height: 45px;
+  background: #000000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  font-size: larger;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
+}
+
+header {
+  padding-top: 36px;
+}
+header .header-mobile-logo {
+  width: 100%;
+  max-width: 87px;
+}
+header .navbar-nav {
+  width: 100%;
+  max-width: 358px;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-link {
+  color: #000000;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  border: 1px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+header .nav-link:hover {
+  color: #56D595;
+  border-bottom: 1px solid #56D595;
+}
+header .header-btn a {
+  background: #56D595;
+  padding: 13px 21px;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero .hero-heading {
+  width: 100%;
+  max-width: 510px;
+}
+.hero .hero-heading h1 {
+  font-family: "Montserrat";
+  font-size: clamp(3.3rem, 2.5vw, 2rem);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 68px;
+  letter-spacing: 0em;
+}
+.hero .hero-heading .hero-description {
+  width: 100%;
+  max-width: 500px;
+}
+.hero .hero-heading .hero-description p {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  line-height: 23px;
+  letter-spacing: 0em;
+}
+.hero .hero-heading .colored {
+  padding-right: 130px;
+  color: aqua;
+}
+
+.about .about-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about .about-content {
+  width: 50%;
+  padding: 2px 60px;
+}
+.about .about-media {
+  width: 50%;
+  max-width: 440px;
+}
+
+.about .about-wrapper {
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about .about-wrapper .about-card {
+  background: #aad696;
+  padding: 40px 29px 62px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  color: aliceblue;
+}
+.about .about-wrapper .about-card:nth-child(2).about-card {
+  background: #74d3f1;
+  padding: 40px 29px 62px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  color: aliceblue;
+}
+@media (max-width: 768px) {
+  .about .about-wrapper .about-card:nth-child(2).about-card {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .about .about-wrapper .about-card {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+.about .about-wrapper .about-card .about-card-media {
+  width: 100%;
+  max-width: 170px;
+}
+
+.main .main-outer .main-wrapper {
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .main-outer .main-wrapper .main-box {
+  background-color: #bc7df9;
+  padding: 40px 29px 62px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+  border-radius: 22px;
+}
+@media (max-width: 768px) {
+  .main .main-outer .main-wrapper .main-box {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+.main .main-outer .main-wrapper .main-box:nth-child(3) {
+  background-color: #56D595;
+  padding: 40px 29px 62px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+  border-radius: 22px;
+}
+@media (max-width: 768px) {
+  .main .main-outer .main-wrapper .main-box:nth-child(3) {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+.main .main-outer .main-wrapper .main-box:nth-child(2) {
+  background-color: #ff6002;
+  padding: 40px 29px 62px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+  border-radius: 22px;
+}
+@media (max-width: 768px) {
+  .main .main-outer .main-wrapper .main-box:nth-child(2) {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.pricing {
+  padding: 30x 0px;
+}
+.pricing .pricing-box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.pricing .pricing-box-wrapper .pricing-box {
+  color: black !important;
+  background-color: #74d3f1;
+  padding: 40px 29px 62px;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  color: #fff;
+  border-radius: 22px;
+}
+.pricing .pricing-box-wrapper .pricing-box h4 {
+  font-weight: 900;
+}
+@media (max-width: 768px) {
+  .pricing .pricing-box-wrapper .pricing-box {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+.pricing .pricing-box-wrapper .pricing-box:nth-child(2) {
+  background-color: #f4a576;
+  padding: 40px 29px 62px;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  color: #fff;
+  border-radius: 22px;
+}
+.pricing .pricing-box-wrapper .pricing-box:nth-child(2) h3 {
+  font-weight: 700;
+  font-size: 55px;
+}
+@media (max-width: 768px) {
+  .pricing .pricing-box-wrapper .pricing-box:nth-child(2) {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+.pricing .pricing-box-wrapper .pricing-box:nth-child(3) {
+  background-color: #aad696;
+  padding: 40px 29px 62px;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  color: #fff;
+  border-radius: 22px;
+}
+.pricing .pricing-box-wrapper .pricing-box:nth-child(3) h2 {
+  font-weight: 700;
+  font-size: 65px;
+}
+@media (max-width: 768px) {
+  .pricing .pricing-box-wrapper .pricing-box:nth-child(3) {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.category {
+  position: relative;
+  padding: 40px 0px;
+}
+.category .headingg {
+  color: #000000;
+  padding: 100px 10px;
+  margin-bottom: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(40px, 5vw, 100px);
+}
+.category .category-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.category .category-wrapper .category-box {
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid rgba(184, 166, 166, 0.6470588235);
+  padding: 5px;
+  margin-right: 10px;
+}
+.category .ctg-m {
+  position: absolute;
+  width: 600px;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.979);
+  left: 50%;
+  transform: translate(-50%);
+  top: 30%;
+  border-radius: 50px;
+}
+.category .ctg-m .box-shadow {
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25), -5px -5px 0px rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=main.css.map */
