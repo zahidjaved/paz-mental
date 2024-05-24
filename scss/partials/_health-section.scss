@@ -1,0 +1,72 @@
+.health-section {
+  padding: 125px 0 125px;
+  background-image: url(../assets/img/health-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  @include media-breakpoint-down(xl) {
+    background-size: contain;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 60px 0 52px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 26px 0 15px;
+    background-size: cover;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 755px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 9px;
+    }
+
+    .description {
+      width: 100%;
+      max-width: 467px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      text-align: center;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 27px;
+      }
+
+      p{
+        @include media-breakpoint-down(md) {
+          margin-bottom: 10px;
+        }
+
+      }
+    }
+
+    .health-btn {
+      .health-cta {
+        @include primaryBtn(110px, 400, $white, $btn-bg);
+        background: linear-gradient(90deg, #ff6b6b 0%, #a500cd 93.08%);
+        margin-right: 8px;
+      }
+
+      .health-another-cta {
+        @include primaryBtn(177px, 400, $white, $btn-bg);
+        background: linear-gradient(90deg, #ff6b6b 0%, #a500cd 93.08%);
+        margin-right: 8px;
+      }
+
+      .health-industry-cta {
+        @include primaryBtn(264px, 400, $brand-primary, transparent);
+        border: 1px solid $fill-brown-red;
+
+        @include media-breakpoint-down(md) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

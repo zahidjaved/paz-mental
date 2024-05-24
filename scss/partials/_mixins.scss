@@ -1,0 +1,407 @@
+@mixin global-font {
+  @include font-format(16px);
+  font-family: $font-family-base;
+  font-weight: $fw-medium;
+  color: $body-color;
+
+  @include media-breakpoint-up(lg) {
+    @include font-format(20px);
+  }
+
+  @include media-breakpoint-up("3xl") {
+    @include font-format(30px);
+  }
+}
+
+@mixin font-format($size, $lh: 1.5) {
+  font-size: $size;
+  line-height: $lh;
+}
+
+@mixin heading {
+  font-family: $font-family-base;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin h1 {
+  @include heading;
+  font-size: 64px;
+  font-weight: $fw-bold;
+  line-height: 73.98px;
+  letter-spacing: -0.05em;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 58px;
+    line-height: 63.98px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    font-size: 53px;
+    line-height: 61px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 46px;
+    line-height: 55px;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+}
+
+@mixin h2 {
+  @include heading;
+  font-size: 48px;
+  font-weight: $fw-semi-bold;
+  line-height: 72px;
+  letter-spacing: -0.05em;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 42px;
+    line-height: 60px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 39px;
+    line-height: 58px;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 34px;
+    line-height: 52px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 6px;
+    font-size: 27px;
+    line-height: 1.2;
+
+  }
+}
+
+@mixin h3($size, $hieght) {
+  font-family: $font-family-base;
+  color: $body-color;
+  font-size: $size;
+  font-weight: $fw-semi-bold;
+  line-height: $hieght;
+}
+
+@mixin h4 {
+  // @include heading;
+  // @include font-format(30px, 1.2);
+}
+
+@mixin h5 {
+  // @include heading;
+  // @include heading_sm;
+}
+
+@mixin h6 {
+  // @include heading;
+  // @include font-format(17px, 1.2);
+
+  // @include media-breakpoint-up(md) {
+  //   @include font-format(18px, 1.2);
+  // }
+}
+
+@mixin paragraph($size, $hieght) {
+  font-family: $font-family-base;
+  font-size: $size;
+  font-weight: $fw-regular;
+  line-height: $hieght;
+  color: $text-color;
+}
+
+@mixin heading_lg {
+  @include font-format(35px, 50px);
+
+  @include media-breakpoint-up(sm) {
+    @include font-format(50px, 70px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font-format(70px, 100px);
+  }
+
+  @include media-breakpoint-up("3xl") {
+    @include font-format(100px, 151px);
+  }
+}
+
+@mixin heading_sm {
+  font-family: $headings-font-family;
+  @include font-format(25px, 45px);
+
+  @include media-breakpoint-up(xl) {
+    @include font-format(30px, 50px);
+  }
+
+  @include media-breakpoint-up("3xl") {
+    @include font-format(40px, 60px);
+  }
+}
+
+@mixin transition-standard {
+  transition: all 0.4s ease-in-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin media-breakpoint-up-custom($custom_breakpoint) {
+  @media only screen and (min-width: $custom_breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down-custom($custom_breakpoint) {
+  @media only screen and (max-width: $custom_breakpoint) {
+    @content;
+  }
+}
+
+$breakpoints-up: (
+  "sm": "min-width: 576px",
+  "md": "min-width: 768px",
+  "lg": "min-width: 992px",
+  "xl": "min-width: 1200px",
+  "xxl": "min-width: 1400px",
+  "3xl": "min-width: 1600px",
+  "4xl": "min-width: 1800px",
+);
+
+@mixin media-breakpoint-up($user-value) {
+  $my-map: map-get($breakpoints-up, $user-value);
+  @if $my-map {
+    @media (#{$my-map}) {
+      @content;
+    }
+  } @else {
+    @error "Opps, seems like the breakpoint is missing ";
+  }
+}
+
+$breakpoints-down: (
+  "sm": "max-width: 575.98px",
+  "md": "max-width: 767.98px",
+  "lg": "max-width: 991.98px",
+  "xl": "max-width: 1199.98px",
+  "xxl": "max-width: 1399.98px",
+  "3xl": "max-width: 1599.98px",
+  "4xl": "max-width: 1799.98px",
+);
+
+@mixin media-breakpoint-down($user-value) {
+  $my-map: map-get($breakpoints-down, $user-value);
+  @if $my-map {
+    @media (#{$my-map}) {
+      @content;
+    }
+  } @else {
+    @error "Opps, seems like the breakpoint is missing ";
+  }
+}
+
+@mixin media-breakpoint-up-custom($custom_breakpoint) {
+  @media only screen and (min-width: $custom_breakpoint) {
+    @content;
+  }
+}
+
+@mixin primaryBtn($max-wdth, $font-weght, $text-color, $bg-colored) {
+  @include transition-standard;
+  @include font-format(16px, 25px);
+  height: 100%;
+  height: 47px;
+  width: 100%;
+  max-width: $max-wdth;
+  font-family: $font-family-base;
+  font-style: normal;
+  font-weight: $font-weght;
+  color: $text-color;
+  text-transform: capitalize;
+  background-color: $bg-colored;
+  padding: 5px 27px;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 8px;
+
+  // @include media-breakpoint-up(lg) {
+  //   @include font-format(20px, 29px);
+  //   min-height: 70px;
+  //   max-width: 350px;
+  // }
+
+  // @include media-breakpoint-up("3xl") {
+  //   @include font-format(30px, 39px);
+  //   min-height: 100px;
+  //   max-width: 510px;
+  // }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: $fill-pink;
+    border: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  // @if $variation == inverted {
+  //   background-color: transparent;
+  //   color: $brand-primary;
+  //   border: 2px solid $brand-primary;
+
+  //   &:hover,
+  //   &:focus {
+  //     background-color: $btn-hover;
+  //     border-color: $btn-hover;
+  //     color: #fff;
+  //   }
+  // }
+
+  // @if $variation == icon {
+  //   padding-right: 32px;
+
+  //   @include media-breakpoint-up(lg) {
+  //     padding-right: 45px;
+  //   }
+
+  //   &:after {
+  //     @include transition-standard;
+  //     content: "";
+  //     background: url(../images/arrow.svg) no-repeat center center/contain;
+  //     height: 26px;
+  //     width: 14px;
+  //     position: absolute;
+  //     right: 15px;
+  //     top: 50%;
+  //     filter: invert(1);
+  //     transform: translateX(0) translateY(-50%);
+
+  //     @include media-breakpoint-up(lg) {
+  //       right: 27px;
+  //     }
+  //   }
+
+  //   &:hover {
+  //     &:after {
+  //       transform: translateX(5px) translateY(-50%);
+
+  //       @include media-breakpoint-up(lg) {
+  //         transform: translateX(10px) translateY(-50%);
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+@mixin cta_link($color: $body-color, $type: "") {
+  @include font-format(18px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $color;
+
+  @include media-breakpoint-up(sm) {
+    @include font-format(20px);
+  }
+
+  @include media-breakpoint-up("3xl") {
+    @include font-format(30px);
+  }
+
+  .cta__text {
+    display: inline-block;
+  }
+
+  svg {
+    margin-left: 20px;
+    transition: 0.3s all ease;
+    height: 25px;
+    width: 14px;
+
+    @include media-breakpoint-up("3xl") {
+      height: 45px;
+      width: 24px;
+    }
+
+    path {
+      fill: $color;
+      transition: 0.3s all ease;
+    }
+  }
+
+  &:hover {
+    color: $brand-primary;
+
+    svg {
+      transform: translateX(10px);
+
+      path {
+        fill: $brand-primary;
+      }
+    }
+  }
+
+  @if $type == "v2" {
+    font-family: $font-family-secondary;
+    font-style: italic;
+
+    svg {
+      margin-left: 15px;
+      height: 26px;
+      width: 14px;
+    }
+  }
+}
+
+@mixin play_btn {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $brand-primary;
+  transition: 0.3s all ease;
+  border: 2px solid transparent;
+
+  @include media-breakpoint-up("3xl") {
+    width: 140px;
+    height: 140px;
+  }
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 27px solid $body-color;
+    border-bottom: 15px solid transparent;
+    margin-right: -7.5px;
+    transition: 0.3s all ease;
+
+    @include media-breakpoint-up("3xl") {
+      border-top: 30px solid transparent;
+      border-left: 54px solid $body-color;
+      border-bottom: 30px solid transparent;
+      margin-right: -15px;
+    }
+  }
+}
+
+@mixin menu_btn($left, $top) {
+  width: 30px;
+  height: 24px;
+  transition-duration: 0.5s;
+  position: relative;
+}

@@ -1,0 +1,77 @@
+.news-letter-section {
+  background: $fill-white-v1;
+  padding: 67px 0 53px;
+
+  .inner {
+    background: $bg-gradient;
+    padding: 36px 15px 24px;
+    border-radius: 20px;
+    text-align: center;
+
+    .content {
+      width: 100%;
+      max-width: 714px;
+      margin: 0 auto;
+      h2 {
+        color: $white;
+        margin-bottom: 8px;
+      }
+
+      .description {
+        width: 100%;
+        max-width: 512px;
+        margin: 0 auto;
+
+        p {
+          @include paragraph(15px, 20px);
+          color: $white;
+        }
+      }
+      .contact-form {
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+        input,
+        textarea {
+          width: 100%;
+          padding: 9px 8px 9px 20px;
+          background: $white;
+          border-radius: 9px;
+          margin-bottom: 12px;
+          border: none;
+          resize: none;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+
+        input[type="submit"] {
+          width: 31%;
+          font-family: $font-family-base;
+          font-size: 16px;
+          font-weight: $fw-medium;
+          line-height: 26px;
+        }
+
+        .wrapper {
+          display: flex;
+          justify-content: space-between;
+
+          @include media-breakpoint-down(sm) {
+            flex-direction: column;
+          }
+
+          .input-field {
+            width: 49%;
+
+            @include media-breakpoint-down(sm) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

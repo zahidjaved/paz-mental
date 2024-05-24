@@ -1,0 +1,98 @@
+header {
+  overflow: hidden;
+
+  @include media-breakpoint-down(lg) {
+    .navbar-toggler {
+      text-decoration: none;
+      margin-right: 0px;
+      width: 39px;
+      height: 50px;
+      background: transparent;
+      border-radius: unset;
+      display: flex;
+      flex-direction: column;
+      border-radius: 6px;
+      padding: 10px 3px;
+      margin-bottom: 5px;
+      margin-top: 3px;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      .navbar-toggler-icon {
+        height: 4px;
+        width: 30px;
+        background-image: unset;
+        background-color: $fill-pink;
+        margin: 2px 0px;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 152px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    max-width: 588px;
+    justify-content: space-between;
+    align-items: center;
+    @include media-breakpoint-down(xl){
+      max-width: 459px;
+    }
+   
+
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      @include transition-standard;
+    }
+
+    .nav-item {
+      .nav-link {
+        font-size: 16px;
+        font-weight: $fw-regular;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+        color: $body-color;
+        text-transform: capitalize;
+        @include transition-standard;
+
+        &:hover {
+          color: $fill-brown-red;
+        }
+      }
+
+      .dropdown-menu {
+        z-index: 1;
+        position: fixed;
+      }
+    }
+  }
+
+  .header-credention-cta {
+    display: flex;
+    width: 100%;
+    max-width: 237px;
+
+    @include media-breakpoint-down(lg){
+     margin: 0 auto;
+     margin-top: 16px;
+   
+    }
+
+    .header-cta {
+      @include primaryBtn(113px, 400, $white, $bg-gradient);
+      margin-right: 10px;
+      background: linear-gradient(90deg, #ff6b6b 0%, #a500cd 93.08%);
+
+      &:nth-child(2n) {
+        margin-right: unset;
+      }
+    }
+  }
+}

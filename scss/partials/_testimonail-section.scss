@@ -1,0 +1,97 @@
+.testimonail-section {
+  padding-bottom: 120px;
+
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 43px;
+  }
+
+  @include media-breakpoint-down(md) {
+    left: 53%;
+  }
+
+  .sec-head {
+    text-align: center;
+  }
+
+  .description {
+    width: 100%;
+    max-width: 510px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .testimonail-slider {
+    .swiper {
+      padding-bottom: 85px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 94%;
+      left: 50%;
+
+      @include media-breakpoint-down(lg) {
+        left: 52%;
+      }
+
+      @include media-breakpoint-down(md) {
+        left: 53%;
+      }
+    }
+
+    .swiper-button-prev {
+      left: 46%;
+
+      @include media-breakpoint-down(xl) {
+        left: 45%;
+      }
+
+      @include media-breakpoint-down(lg) {
+        left: 44%;
+      }
+      @include media-breakpoint-down(md) {
+        left: 41%;
+      }
+      @include media-breakpoint-down(sm) {
+        left: 40%;
+      }
+    }
+
+    .sec-item {
+      @extend .item-card;
+      width: 100%;
+      max-width: 299px;
+      height: 100%;
+      padding: 25px 29px 25px 29px;
+      @include media-breakpoint-down(lg) {
+        margin: 0 auto;
+      }
+
+      .media {
+        width: 100%;
+        max-width: 44px;
+        margin-bottom: 26px;
+      }
+      .meta-deatial {
+        margin-bottom: 40px;
+        p {
+          @include paragraph(16px, 24px);
+          color: $brand-primary;
+        }
+      }
+      .meta-data {
+        h4 {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 16.2px;
+          letter-spacing: -0.12600000202655792px;
+          margin-bottom: 5px;
+        }
+        p {
+          @include paragraph(14px, 16px);
+          font-weight: $fw-medium;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  // @include global-font;
+  background: $white;
+  font-family: $font-family-base;
+  color: $body-color;
+}
+
+a {
+  @include transition-standard;
+  color: $brand-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $brand-secondary;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: $fw-bold;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading;
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3(16px, 1.2);
+}
+
+h4 {
+  @include h4;
+}
+
+h5 {
+  @include h5;
+}
+
+p {
+  @include paragraph(16px, 23px);
+
+  
+  @include media-breakpoint-down(sm){
+    @include paragraph(14px, 22px);
+  }
+}
+
+.item-card {
+  border-radius: 11px;
+  border: 1px solid $fill-brown-pink;
+}
+
+/* Custom slider CSS */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 50px !important;
+  
+
+}
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

@@ -1,0 +1,70 @@
+.site-footer {
+  background: $fill-white-v1;
+  padding: 0px 0 10px;
+
+  .logo {
+    width: 100%;
+    max-width: 152px;
+    margin-bottom: 24px;
+  }
+
+  .description {
+    width: 100%;
+    max-width: 223px;
+
+    p {
+      @include paragraph(15px, 22px);
+    }
+  }
+
+  .links {
+    width: 100%;
+    max-width: 147px;
+    margin-left: auto;
+    @include media-breakpoint-down(sm){
+      margin-left: unset;
+    }
+
+
+    h4 {
+      font-size: 16px;
+      font-weight: $fw-semi-bold;
+      line-height: 18px;
+      margin-bottom: 31px;
+      text-transform: uppercase;
+    }
+
+    .social-links{
+        display: flex;
+    }
+    ul {
+      li {
+        margin-bottom: 15px;
+        a {
+          @include paragraph(15px, 22px);
+          text-transform: capitalize;
+          @include transition-standard;
+          &:hover {
+            color: $fill-brown-red;
+          }
+        }
+
+        .footer-social-links{
+            img{
+                width: 100%;
+                max-width: 25px;
+                margin-right: 13px;
+            }
+           }
+      }
+
+    }
+  }
+
+  .copry-write{
+    padding-top: 39px;
+    border-top: 1px solid #E2E8F0;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

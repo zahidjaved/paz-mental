@@ -1,0 +1,71 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-breakpoint-down(lg) {
+    min-height: 83vh;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 470px;
+    padding-top: 80px;
+
+    @include media-breakpoint-down(xl) {
+      max-width: 418px;
+      padding-top: 23px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 600px;
+      padding-top: 0px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    h5 {
+      @include paragraph(16px, 24px);
+      color: $brand-primary;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      margin-bottom: 16px;
+    }
+
+    .description {
+      p {
+        @include paragraph(16px, 24px);
+        margin-bottom: 32px;
+      }
+    }
+
+    .hero-btn {
+      .hero-product-cta {
+        @include primaryBtn(178px, 400, $white, $btn-bg);
+        background: linear-gradient(90deg, #ff6b6b 0%, #a500cd 93.08%);
+        margin-right: 15px;
+        margin-bottom: 18px;
+      }
+      .hero-qoute-cta {
+        @include primaryBtn(215px, 400, $brand-primary, transparent);
+        border-radius: 23px;
+        border: 1px solid $fill-brown-red;
+        padding: 5px 12px;
+
+        span {
+          width: 100%;
+          max-width: 30px;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .media {
+    width: 100%;
+    max-width: 504px;
+  }
+}

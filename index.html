@@ -3,221 +3,1827 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- bootstrap link -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- font-awesome link -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <!-- scss -->
     <link rel="stylesheet" href="./scss/main.css" />
-    <title>Document</title>
+
+    <title>paz mental</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png" />
   </head>
   <body>
-    <!-- header start here -->
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand header-mobile-logo" href="javascript: void(0)"
-            ><img src="./assets/img/logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div
-            class="collapse navbar-collapse toggle-menu"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0" id="menu">
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="javascript: void(0)"
-                  >Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript: void(0)"> Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript: void(0)"> About Us </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript: void(0)">Contact Us</a>
-              </li>
-            </ul>
-
-            <!-- <a class="navbar-brand me-auto disktop-logo" href="javascript: void(0)"
-              ><img src="./assets/img/header-logo.png" alt=""
-            /></a> -->
-            <div class="header-btn" id="mode-toggle">
-              <a href="javascript: void(0)">Dark Light</a>
+    <!-- header-top start here -->
+    <div class="top-header-bar">
+      <div class="container-lg">
+        <div class="inner">
+          <div class="row">
+            <div class="col-6">
+              <div class="social-links">
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="./assets/img/facebook.png" alt="img" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./assets/img/insta.png" alt="img" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./assets/img/whatsapp.png" alt="img" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./assets/img/yotube.png" alt="img" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- header end here -->
-    <!-- hero section start here -->
-    <section class="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <div class="hero-heading">
-              <h1>
-                We <span class="colored">Provide</span> Tech Services In
-                <span style="color: aqua">Transparent</span> Pricing
-              </h1>
-              <div class="hero-description">
-                <p>
-                  At Zero Day, quality tech services meet transparent pricing
-                  for all. Empowering everyone with accessibility and
-                  affordability.
-                </p>
+            <div class="col-6">
+              <div class="shop">
+                <ul>
+                  <li>
+                    <a href="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-search"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
-            <div class="hero-media">
-              <img src="./assets/img/hero.png" alt="img" />
+        </div>
+      </div>
+    </div>
+    <!-- header-top end here -->
+    <!-- header start here -->
+    <header>
+      <div class="row">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-lg">
+            <a class="navbar-brand logo" href="javascript: void(0)">
+              <img src="./assets/img/logo.png" alt="img"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse toggle-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0" id="menu">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="javascript: void(0)"
+                    >Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript: void(0)"> about us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDarkDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    product
+                  </a>
+
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDarkDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDarkDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    help
+                  </a>
+
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDarkDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript: void(0)">benefits</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript: void(0)">contact us</a>
+                </li>
+              </ul>
+
+              <div class="header-credention-cta" id="mode-toggle">
+                <a class="header-cta" href="javascript: void(0)">Login</a>
+                <a class="header-cta" href="javascript: void(0)">Check In</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- hero section start here -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="content">
+              <h5>Stay Safe</h5>
+              <h1>Your One-Stop Source for Essential Living</h1>
+              <div class="description">
+                <p>
+                  Discover a curated selection of products designed to support
+                  your holistic well-being, all in one convenient destination.
+                </p>
+              </div>
+              <div class="hero-btn">
+                <a class="hero-product-cta" href="">view Product</a>
+                <a class="hero-qoute-cta" href=""
+                  >Get your Free Qoute
+                  <span><img src="./assets/img/checked.png" alt="img" /></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 d-none d-lg-block">
+            <div class="media">
+              <img src="./assets/img/hero-media.png" alt="img" />
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- hero section end here -->
-    <!-- about section start -->
-    <section class="about">
-      <div class="inner-about container">
-        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <div class="about-wrapper">
-            <div class="about-card">
-              <div class="about-card-media">
-                <img src="./assets/img/pay.png" alt="img" />
-              </div>
-              <p>Cooperative Income System</p>
-              <h3>CoopInc™ is the world's first CooperativeIncome System™</h3>
+    <!-- health section start here -->
+    <section class="health-section">
+      <div class="container">
+        <div class="row">
+          <div class="content">
+            <h2>Who are you seeking to protect?</h2>
+            <div class="description">
+              <p>
+                Let's find the right medical alert system for you, your family,
+                your friend and your loved once.
+              </p>
             </div>
-            <div class="about-card">
-              <div class="about-card-media">
-                <img src="./assets/img/pay.png" alt="img" />
-              </div>
-              <p>Daily CashFlow</p>
-              <h3>
-                Generate a sustainable income and each receive daily cashflow
-              </h3>
+            <div class="health-btn">
+              <a class="health-cta" href="">myself</a>
+              <a class="health-another-cta" href="">another person</a>
+              <a class="health-industry-cta" href=""
+                >i am from the health industry</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="main">
-      <div class="main-outer container">
-        <div class="main-wrapper">
-          <div class="main-box">
-            <h2 class="my-3">Starter</h2>
-            <p class="lead">Quickly cover you monthly expenses</p>
-          </div>
-          <div class="main-box">
-            <h2 class="my-3">Accelerated Combo</h2>
-            <p class="lead">Cover your monthly expenses and get out of debt!</p>
-          </div>
-          <div class="main-box">
-            <h2 class="my-3">Ultimate Combos</h2>
-            <p class="lead">
-              Cover your monthly expenses, debt and fund your life.s
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pricing">
+    <!-- health section end here -->
+    <!-- feature section start here -->
+    <section class="feature-section">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="pricing-box-wrapper">
-              <div class="pricing-box">
-                <h4 class="mb-2 h3">$22</h4>
-                <h5 class="mb-1">Starter</h5>
-                <p>Quickly cover your monthly expenses.</p>
+            <h2>Feature Product</h2>
+          </div>
+          <div class="col-12">
+            <!-- slider -->
+
+            <div class="col-12">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Alert Device
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Medical Identification
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    Accessories
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                >
+                  <div class="swiper featured-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/home.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Home medical alert</h3>
+                            <p>
+                              A classic medical alert system designed for
+                              independent living
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/braclete.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Bracelets</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/mobile.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Mobile Alert</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/watch.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Bracelets</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/braclete.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Bracelets</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/mobile.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Mobile Alert</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next">
+                      <svg
+                        width="51"
+                        height="51"
+                        viewBox="0 0 51 51"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="25.5"
+                          cy="25.6978"
+                          r="24.5"
+                          stroke="url(#paint0_linear_649_1224)"
+                        />
+                        <path
+                          d="M18.5 25.6978H32.5"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M28.5 29.6978L32.5 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M28.5 21.6978L32.5 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_649_1224"
+                            x1="1"
+                            y1="26"
+                            x2="50.5"
+                            y2="26"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#FF6B6B" />
+                            <stop offset="1" stop-color="#A500CD" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <svg
+                        width="51"
+                        height="51"
+                        viewBox="0 0 51 51"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="25"
+                          cy="25"
+                          r="24.5"
+                          transform="matrix(-1 0 0 1 50.5 0.697754)"
+                          stroke="url(#paint0_linear_649_1218)"
+                        />
+                        <path
+                          d="M32 25.6978H18"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M22 29.6978L18 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M22 21.6978L18 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_649_1218"
+                            x1="49.5"
+                            y1="25.3022"
+                            x2="-0.5"
+                            y2="25.3022"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#FF6B6B" />
+                            <stop offset="1" stop-color="#A500CD" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                >
+                  <div class="swiper featured-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/home.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Home medical alert</h3>
+                            <p>
+                              A classic medical alert system designed for
+                              independent living
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/braclete.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Bracelets</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/mobile.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Mobile Alert</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/watch.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Bracelets</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/braclete.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Bracelets</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/mobile.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Mobile Alert</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next">
+                      <svg
+                        width="51"
+                        height="51"
+                        viewBox="0 0 51 51"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="25.5"
+                          cy="25.6978"
+                          r="24.5"
+                          stroke="url(#paint0_linear_649_1224)"
+                        />
+                        <path
+                          d="M18.5 25.6978H32.5"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M28.5 29.6978L32.5 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M28.5 21.6978L32.5 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_649_1224"
+                            x1="1"
+                            y1="26"
+                            x2="50.5"
+                            y2="26"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#FF6B6B" />
+                            <stop offset="1" stop-color="#A500CD" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <svg
+                        width="51"
+                        height="51"
+                        viewBox="0 0 51 51"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="25"
+                          cy="25"
+                          r="24.5"
+                          transform="matrix(-1 0 0 1 50.5 0.697754)"
+                          stroke="url(#paint0_linear_649_1218)"
+                        />
+                        <path
+                          d="M32 25.6978H18"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M22 29.6978L18 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M22 21.6978L18 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_649_1218"
+                            x1="49.5"
+                            y1="25.3022"
+                            x2="-0.5"
+                            y2="25.3022"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#FF6B6B" />
+                            <stop offset="1" stop-color="#A500CD" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
+                >
+                  <div class="swiper featured-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/home.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Home medical alert</h3>
+                            <p>
+                              A classic medical alert system designed for
+                              independent living
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/braclete.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Bracelets</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/mobile.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Mobile Alert</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/watch.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Bracelets</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/braclete.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Bracelets</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="sec-item">
+                          <div class="media">
+                            <img src="./assets/img/mobile.png" alt="img" />
+                          </div>
+                          <div class="meta-data">
+                            <h3>Mobile Alert</h3>
+                            <p>
+                              Bracelets with medical information to carry
+                              wherever you go
+                            </p>
+
+                            <a class="buy-cta" href="">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next">
+                      <svg
+                        width="51"
+                        height="51"
+                        viewBox="0 0 51 51"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="25.5"
+                          cy="25.6978"
+                          r="24.5"
+                          stroke="url(#paint0_linear_649_1224)"
+                        />
+                        <path
+                          d="M18.5 25.6978H32.5"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M28.5 29.6978L32.5 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M28.5 21.6978L32.5 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_649_1224"
+                            x1="1"
+                            y1="26"
+                            x2="50.5"
+                            y2="26"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#FF6B6B" />
+                            <stop offset="1" stop-color="#A500CD" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <svg
+                        width="51"
+                        height="51"
+                        viewBox="0 0 51 51"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="25"
+                          cy="25"
+                          r="24.5"
+                          transform="matrix(-1 0 0 1 50.5 0.697754)"
+                          stroke="url(#paint0_linear_649_1218)"
+                        />
+                        <path
+                          d="M32 25.6978H18"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M22 29.6978L18 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M22 21.6978L18 25.6978"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_649_1218"
+                            x1="49.5"
+                            y1="25.3022"
+                            x2="-0.5"
+                            y2="25.3022"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#FF6B6B" />
+                            <stop offset="1" stop-color="#A500CD" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
               </div>
-              <div class="pricing-box">
-                <h3 class="mb-2 h2">$50</h3>
-                <h5 class="mb-1">Starter</h5>
-                <p>Quickly cover your monthly expenses.</p>
-              </div>
-              <div class="pricing-box">
-                <h2 class="mb-2 h1">$350</h2>
-                <h5 class="mb-1">Starter</h5>
-                <p>Quickly cover your monthly expenses.</p>
-              </div>
+            </div>
+            <!-- slider -->
+          </div>
+          <div class="col-12">
+            <div class="feature-cta">
+              <a class="product-cta" href="">View all product</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- category -->
-    <section class="category">
-      <div class="ctg-m">
-          <h2>head</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, quaerat ipsa incidunt corporis molestiae omnis quis libero enim consequuntur ratione vel in. Dolor nostrum, corporis error exercitationem odio earum quasi!</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, quaerat ipsa incidunt corporis molestiae omnis quis libero enim consequuntur ratione vel in. Dolor nostrum, corporis error exercitationem odio earum quasi!</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, quaerat ipsa incidunt corporis molestiae omnis quis libero enim consequuntur ratione vel in. Dolor nostrum, corporis error exercitationem odio earum quasi!</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, quaerat ipsa incidunt corporis molestiae omnis quis libero enim consequuntur ratione vel in. Dolor nostrum, corporis error exercitationem odio earum quasi!</p>
-      </div>
+    <!-- feature section end here -->
+    <!-- benefit section start here -->
+    <section class="benefit-section">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="headingg">this dyname text</h2>
+            <div class="sec-head">
+              <h2>Benefit of choosing us</h2>
+              <div class="description">
+                <p>
+                  Discover the Value of Paz-Mental, Prioritize Safety and
+                  Well-Being for You and Your Loved Ones.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="sec-item">
+              <div class="media">
+                <img src="./assets/img/poster.png" alt="img" />
+              </div>
+              <h3>Foster Independence</h3>
+              <div class="description">
+                <p>
+                  Maintain independence with the assurance of immediate help
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="sec-item">
+              <div class="media">
+                <img src="./assets/img/poster.png" alt="img" />
+              </div>
+              <h3>Foster Independence</h3>
+              <div class="description">
+                <p>
+                  Maintain independence with the assurance of immediate help
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="sec-item">
+              <div class="media">
+                <img src="./assets/img/poster.png" alt="img" />
+              </div>
+              <h3>Foster Independence</h3>
+              <div class="description">
+                <p>
+                  Maintain independence with the assurance of immediate help
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="sec-item">
+              <div class="media">
+                <img src="./assets/img/poster.png" alt="img" />
+              </div>
+              <h3>Foster Independence</h3>
+              <div class="description">
+                <p>
+                  Maintain independence with the assurance of immediate help
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="sec-item">
+              <div class="media">
+                <img src="./assets/img/poster.png" alt="img" />
+              </div>
+              <h3>Foster Independence</h3>
+              <div class="description">
+                <p>
+                  Maintain independence with the assurance of immediate help
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="sec-item">
+              <div class="media">
+                <img src="./assets/img/poster.png" alt="img" />
+              </div>
+              <h3>Foster Independence</h3>
+              <div class="description">
+                <p>
+                  Maintain independence with the assurance of immediate help
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="sec-item">
+              <div class="media">
+                <img src="./assets/img/poster.png" alt="img" />
+              </div>
+              <h3>Foster Independence</h3>
+              <div class="description">
+                <p>
+                  Maintain independence with the assurance of immediate help
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="sec-item">
+              <div class="media">
+                <img src="./assets/img/poster.png" alt="img" />
+              </div>
+              <h3>Foster Independence</h3>
+              <div class="description">
+                <p>
+                  Maintain independence with the assurance of immediate help
+                </p>
+              </div>
+            </div>
           </div>
           <div class="col-12">
-            <div class="category-wrapper">
-              <div class="category-box">
-                <img src="./assets/img/category.png" alt="img" />
-                <h3>Rayban Aventor Glasses</h3>
-                <p>$88.00$79.00</p>
-                <button class="d-inline mx-2 my-2">buy now</button>
-                <button class="d-inline">buy now</button>
-              </div>
-
-              <div class="category-box">
-                <img src="./assets/img/category.png" alt="img" />
-                <h3>Rayban Aventor Glasses</h3>
-                <p>$88.00$79.00</p>
-                <button class="d-inline mx-2 my-2">buy now</button>
-                <button class="d-inline">buy now</button>
-              </div>
-
-              <div class="category-box">
-                <img src="./assets/img/category.png" alt="img" />
-                <h3>Rayban Aventor Glasses</h3>
-                <p>$88.00$79.00</p>
-                <button class="d-inline mx-2 my-2">buy now</button>
-                <button class="d-inline">buy now</button>
+            <div class="benefit-btn">
+              <a class="benefit-cta" href="">view all benefits</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- benefit section end here -->
+    <!-- privacy-section start here -->
+    <section class="privacy-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="media">
+              <img src="./assets/img/privacy.png" alt="img" />
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="content">
+              <h2>Your Privacy Matters</h2>
+              <div class="description">
+                <p>
+                  We uphold strict confidentiality standards and do not engage
+                  in the sharing or selling of your personal information.
+                  Safeguarding your privacy is paramount to us. By engaging with
+                  our services and answering inquiries, you consent to providing
+                  explicit authorization, electronically signed, for PazMental
+                  RD to contact you via the provided telephone number and/or
+                  other contact methods. We assure you that any information
+                  shared will be handled with the utmost care and in compliance
+                  with relevant laws and regulations governing data protection.
+                  At PazMental RD, we hold the privacy rights of all individuals
+                  in high regard and are fully committed to responsibly managing
+                  personal data.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- about section end -->
-    <!--bootstrap jquery script -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+    <!-- privacy-section end here -->
+    <!-- our blog section start here -->
+    <section class="blog-listing-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="sec-head">
+              <h2>Explore Our Blog</h2>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="swiper blog-listing-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="listing">
+                    <div class="media">
+                      <div class="label">
+                        <span>5 min</span>
+                      </div>
+                    </div>
+                    <div class="meta-data">
+                      <h3>Understanding Different Types of Medical Alert</h3>
+
+                      <div class="description">
+                        <p>
+                          Understanding Different Types of Medical Alert
+                          SystemsUnderstanding Different Types of Medical Alert
+                          Systems
+                        </p>
+
+                        <a class="list-cta" href="">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="listing">
+                    <div class="media">
+                      <div class="label">
+                        <span>5 min</span>
+                      </div>
+                    </div>
+                    <div class="meta-data">
+                      <h3>Understanding Different Types of Medical Alert</h3>
+
+                      <div class="description">
+                        <p>
+                          Understanding Different Types of Medical Alert
+                          SystemsUnderstanding Different Types of Medical Alert
+                          Systems
+                        </p>
+
+                        <a class="list-cta" href="">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="listing">
+                    <div class="media">
+                      <div class="label">
+                        <span>5 min</span>
+                      </div>
+                    </div>
+                    <div class="meta-data">
+                      <h3>Understanding Different Types of Medical Alert</h3>
+
+                      <div class="description">
+                        <p>
+                          Understanding Different Types of Medical Alert
+                          SystemsUnderstanding Different Types of Medical Alert
+                          Systems
+                        </p>
+
+                        <a class="list-cta" href="">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="listing">
+                    <div class="media">
+                      <div class="label">
+                        <span>5 min</span>
+                      </div>
+                    </div>
+                    <div class="meta-data">
+                      <h3>Understanding Different Types of Medical Alert</h3>
+
+                      <div class="description">
+                        <p>
+                          Understanding Different Types of Medical Alert
+                          SystemsUnderstanding Different Types of Medical Alert
+                          Systems
+                        </p>
+
+                        <a class="list-cta" href="">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="listing">
+                    <div class="media">
+                      <div class="label">
+                        <span>5 min</span>
+                      </div>
+                    </div>
+                    <div class="meta-data">
+                      <h3>Understanding Different Types of Medical Alert</h3>
+
+                      <div class="description">
+                        <p>
+                          Understanding Different Types of Medical Alert
+                          SystemsUnderstanding Different Types of Medical Alert
+                          Systems
+                        </p>
+
+                        <a class="list-cta" href="">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next">
+                <svg
+                  width="51"
+                  height="51"
+                  viewBox="0 0 51 51"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="25.5"
+                    cy="25.6978"
+                    r="24.5"
+                    stroke="url(#paint0_linear_649_1224)"
+                  />
+                  <path
+                    d="M18.5 25.6978H32.5"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M28.5 29.6978L32.5 25.6978"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M28.5 21.6978L32.5 25.6978"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_649_1224"
+                      x1="1"
+                      y1="26"
+                      x2="50.5"
+                      y2="26"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FF6B6B" />
+                      <stop offset="1" stop-color="#A500CD" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiper-button-prev">
+                <svg
+                  width="51"
+                  height="51"
+                  viewBox="0 0 51 51"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="25"
+                    cy="25"
+                    r="24.5"
+                    transform="matrix(-1 0 0 1 50.5 0.697754)"
+                    stroke="url(#paint0_linear_649_1218)"
+                  />
+                  <path
+                    d="M32 25.6978H18"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 29.6978L18 25.6978"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 21.6978L18 25.6978"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_649_1218"
+                      x1="49.5"
+                      y1="25.3022"
+                      x2="-0.5"
+                      y2="25.3022"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FF6B6B" />
+                      <stop offset="1" stop-color="#A500CD" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our blog section end here -->
+    <!-- testimonail section start here  -->
+    <section class="testimonail-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="sec-head">
+              <h2>Testimonial</h2>
+            </div>
+            <div class="description">
+              <p>
+                Read heartfelt testimonials from our satisfied customers,
+                showcasing our dedication to their safety and well-being.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="testimonail-slider">
+              <div class="swiper testimonail-swiper-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="sec-item">
+                      <div class="media">
+                        <svg
+                          width="44"
+                          height="29"
+                          viewBox="0 0 44 29"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.23167 7.06082C8.93792 6.90345 9.65985 6.82422 10.384 6.82461C16.1187 6.82461 20.7662 11.7218 20.7662 17.7603C20.7662 23.8006 16.1187 28.6978 10.384 28.6978C4.64933 28.6978 0 23.8024 0 17.7603C0 17.5836 0.00366667 17.4051 0.0128333 17.2284H0C0 8.11382 7.04 0.697754 15.6933 0.697754V4.36882C12.8865 4.36882 10.2978 5.37494 8.23167 7.06082ZM31.4673 7.06082C32.1603 6.90575 32.879 6.82461 33.616 6.82461C39.3507 6.82461 44 11.7218 44 17.7603C44 23.8006 39.3507 28.6978 33.616 28.6978C27.8813 28.6978 23.2338 23.8024 23.2338 17.7603C23.2338 17.5836 23.2375 17.4051 23.2467 17.2284H23.2338C23.2338 8.11382 30.2738 0.697754 38.9272 0.697754V4.36882C36.1185 4.36882 33.5335 5.37494 31.4673 7.06082Z"
+                            fill="#FF6B6B"
+                          />
+                        </svg>
+                      </div>
+                      <div class="meta-deatial">
+                        <p>
+                          I can't thank Paz Mental enough for their exceptional
+                          service. Their quick response saved my mother's life
+                          during a medical emergency.
+                        </p>
+                      </div>
+                      <div class="meta-data">
+                        <h4>John Smith</h4>
+                        <p>March 15, 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec-item">
+                      <div class="media">
+                        <svg
+                          width="44"
+                          height="29"
+                          viewBox="0 0 44 29"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.23167 7.06082C8.93792 6.90345 9.65985 6.82422 10.384 6.82461C16.1187 6.82461 20.7662 11.7218 20.7662 17.7603C20.7662 23.8006 16.1187 28.6978 10.384 28.6978C4.64933 28.6978 0 23.8024 0 17.7603C0 17.5836 0.00366667 17.4051 0.0128333 17.2284H0C0 8.11382 7.04 0.697754 15.6933 0.697754V4.36882C12.8865 4.36882 10.2978 5.37494 8.23167 7.06082ZM31.4673 7.06082C32.1603 6.90575 32.879 6.82461 33.616 6.82461C39.3507 6.82461 44 11.7218 44 17.7603C44 23.8006 39.3507 28.6978 33.616 28.6978C27.8813 28.6978 23.2338 23.8024 23.2338 17.7603C23.2338 17.5836 23.2375 17.4051 23.2467 17.2284H23.2338C23.2338 8.11382 30.2738 0.697754 38.9272 0.697754V4.36882C36.1185 4.36882 33.5335 5.37494 31.4673 7.06082Z"
+                            fill="#FF6B6B"
+                          />
+                        </svg>
+                      </div>
+                      <div class="meta-deatial">
+                        <p>
+                          I can't thank Paz Mental enough for their exceptional
+                          service. Their quick response saved my mother's life
+                          during a medical emergency.
+                        </p>
+                      </div>
+                      <div class="meta-data">
+                        <h4>John Smith</h4>
+                        <p>March 15, 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec-item">
+                      <div class="media">
+                        <svg
+                          width="44"
+                          height="29"
+                          viewBox="0 0 44 29"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.23167 7.06082C8.93792 6.90345 9.65985 6.82422 10.384 6.82461C16.1187 6.82461 20.7662 11.7218 20.7662 17.7603C20.7662 23.8006 16.1187 28.6978 10.384 28.6978C4.64933 28.6978 0 23.8024 0 17.7603C0 17.5836 0.00366667 17.4051 0.0128333 17.2284H0C0 8.11382 7.04 0.697754 15.6933 0.697754V4.36882C12.8865 4.36882 10.2978 5.37494 8.23167 7.06082ZM31.4673 7.06082C32.1603 6.90575 32.879 6.82461 33.616 6.82461C39.3507 6.82461 44 11.7218 44 17.7603C44 23.8006 39.3507 28.6978 33.616 28.6978C27.8813 28.6978 23.2338 23.8024 23.2338 17.7603C23.2338 17.5836 23.2375 17.4051 23.2467 17.2284H23.2338C23.2338 8.11382 30.2738 0.697754 38.9272 0.697754V4.36882C36.1185 4.36882 33.5335 5.37494 31.4673 7.06082Z"
+                            fill="#FF6B6B"
+                          />
+                        </svg>
+                      </div>
+                      <div class="meta-deatial">
+                        <p>
+                          I can't thank Paz Mental enough for their exceptional
+                          service. Their quick response saved my mother's life
+                          during a medical emergency.
+                        </p>
+                      </div>
+                      <div class="meta-data">
+                        <h4>John Smith</h4>
+                        <p>March 15, 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec-item">
+                      <div class="media">
+                        <svg
+                          width="44"
+                          height="29"
+                          viewBox="0 0 44 29"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.23167 7.06082C8.93792 6.90345 9.65985 6.82422 10.384 6.82461C16.1187 6.82461 20.7662 11.7218 20.7662 17.7603C20.7662 23.8006 16.1187 28.6978 10.384 28.6978C4.64933 28.6978 0 23.8024 0 17.7603C0 17.5836 0.00366667 17.4051 0.0128333 17.2284H0C0 8.11382 7.04 0.697754 15.6933 0.697754V4.36882C12.8865 4.36882 10.2978 5.37494 8.23167 7.06082ZM31.4673 7.06082C32.1603 6.90575 32.879 6.82461 33.616 6.82461C39.3507 6.82461 44 11.7218 44 17.7603C44 23.8006 39.3507 28.6978 33.616 28.6978C27.8813 28.6978 23.2338 23.8024 23.2338 17.7603C23.2338 17.5836 23.2375 17.4051 23.2467 17.2284H23.2338C23.2338 8.11382 30.2738 0.697754 38.9272 0.697754V4.36882C36.1185 4.36882 33.5335 5.37494 31.4673 7.06082Z"
+                            fill="#FF6B6B"
+                          />
+                        </svg>
+                      </div>
+                      <div class="meta-deatial">
+                        <p>
+                          I can't thank Paz Mental enough for their exceptional
+                          service. Their quick response saved my mother's life
+                          during a medical emergency.
+                        </p>
+                      </div>
+                      <div class="meta-data">
+                        <h4>John Smith</h4>
+                        <p>March 15, 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec-item">
+                      <div class="media">
+                        <svg
+                          width="44"
+                          height="29"
+                          viewBox="0 0 44 29"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.23167 7.06082C8.93792 6.90345 9.65985 6.82422 10.384 6.82461C16.1187 6.82461 20.7662 11.7218 20.7662 17.7603C20.7662 23.8006 16.1187 28.6978 10.384 28.6978C4.64933 28.6978 0 23.8024 0 17.7603C0 17.5836 0.00366667 17.4051 0.0128333 17.2284H0C0 8.11382 7.04 0.697754 15.6933 0.697754V4.36882C12.8865 4.36882 10.2978 5.37494 8.23167 7.06082ZM31.4673 7.06082C32.1603 6.90575 32.879 6.82461 33.616 6.82461C39.3507 6.82461 44 11.7218 44 17.7603C44 23.8006 39.3507 28.6978 33.616 28.6978C27.8813 28.6978 23.2338 23.8024 23.2338 17.7603C23.2338 17.5836 23.2375 17.4051 23.2467 17.2284H23.2338C23.2338 8.11382 30.2738 0.697754 38.9272 0.697754V4.36882C36.1185 4.36882 33.5335 5.37494 31.4673 7.06082Z"
+                            fill="#FF6B6B"
+                          />
+                        </svg>
+                      </div>
+                      <div class="meta-deatial">
+                        <p>
+                          I can't thank Paz Mental enough for their exceptional
+                          service. Their quick response saved my mother's life
+                          during a medical emergency.
+                        </p>
+                      </div>
+                      <div class="meta-data">
+                        <h4>John Smith</h4>
+                        <p>March 15, 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sec-item">
+                      <div class="media">
+                        <svg
+                          width="44"
+                          height="29"
+                          viewBox="0 0 44 29"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.23167 7.06082C8.93792 6.90345 9.65985 6.82422 10.384 6.82461C16.1187 6.82461 20.7662 11.7218 20.7662 17.7603C20.7662 23.8006 16.1187 28.6978 10.384 28.6978C4.64933 28.6978 0 23.8024 0 17.7603C0 17.5836 0.00366667 17.4051 0.0128333 17.2284H0C0 8.11382 7.04 0.697754 15.6933 0.697754V4.36882C12.8865 4.36882 10.2978 5.37494 8.23167 7.06082ZM31.4673 7.06082C32.1603 6.90575 32.879 6.82461 33.616 6.82461C39.3507 6.82461 44 11.7218 44 17.7603C44 23.8006 39.3507 28.6978 33.616 28.6978C27.8813 28.6978 23.2338 23.8024 23.2338 17.7603C23.2338 17.5836 23.2375 17.4051 23.2467 17.2284H23.2338C23.2338 8.11382 30.2738 0.697754 38.9272 0.697754V4.36882C36.1185 4.36882 33.5335 5.37494 31.4673 7.06082Z"
+                            fill="#FF6B6B"
+                          />
+                        </svg>
+                      </div>
+                      <div class="meta-deatial">
+                        <p>
+                          I can't thank Paz Mental enough for their exceptional
+                          service. Their quick response saved my mother's life
+                          during a medical emergency.
+                        </p>
+                      </div>
+                      <div class="meta-data">
+                        <h4>John Smith</h4>
+                        <p>March 15, 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next">
+                  <svg
+                    width="51"
+                    height="51"
+                    viewBox="0 0 51 51"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="25.5"
+                      cy="25.6978"
+                      r="24.5"
+                      stroke="url(#paint0_linear_649_1224)"
+                    />
+                    <path
+                      d="M18.5 25.6978H32.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M28.5 29.6978L32.5 25.6978"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M28.5 21.6978L32.5 25.6978"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_649_1224"
+                        x1="1"
+                        y1="26"
+                        x2="50.5"
+                        y2="26"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF6B6B" />
+                        <stop offset="1" stop-color="#A500CD" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="swiper-button-prev">
+                  <svg
+                    width="51"
+                    height="51"
+                    viewBox="0 0 51 51"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="25"
+                      cy="25"
+                      r="24.5"
+                      transform="matrix(-1 0 0 1 50.5 0.697754)"
+                      stroke="url(#paint0_linear_649_1218)"
+                    />
+                    <path
+                      d="M32 25.6978H18"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22 29.6978L18 25.6978"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22 21.6978L18 25.6978"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_649_1218"
+                        x1="49.5"
+                        y1="25.3022"
+                        x2="-0.5"
+                        y2="25.3022"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF6B6B" />
+                        <stop offset="1" stop-color="#A500CD" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonail section end here  -->
+    <!-- new letter section start here -->
+    <section class="news-letter-section">
+      <div class="container">
+        <div class="inner">
+          <div class="row">
+            <div class="content">
+              <h2>We would love to hear from you</h2>
+              <div class="description">
+                <p>
+                  If you are curious about the features of a product, a service
+                  or even a journalist, we are ready to answer any and all
+                  questions.
+                </p>
+              </div>
+              <div class="contact-form">
+                <!-- form -->
+                <from action="#">
+                  <div class="wrapper form-group">
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="First name"
+                        required=""
+                      />
+                    </div>
+                    <div class="input-field">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email address"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required=""
+                  />
+                  <textarea
+                    name="user-message"
+                    id="user-message"
+                    cols="1"
+                    rows="1"
+                    class="form-control"
+                    placeholder="How can we help?"
+                  ></textarea>
+                  <div class="submit-btn">
+                    <input type="submit" value="Submit" class="submit_btn" />
+                  </div>
+                </from>
+                <!-- form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- new letter section end here -->
+    <!-- footer start here -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <div class="logo">
+              <a href="">
+                <img src="./assets/img/logo.png" alt="img" />
+              </a>
+            </div>
+            <div class="description">
+              <p>
+                Clarity gives you the blocks and components you need to create a
+                truly professional website.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Company</h4>
+              <ul>
+                <li><a href=""> home </a></li>
+                <li><a href=""> How it works </a></li>
+                <li><a href=""> Product </a></li>
+                <li><a href=""> Benefits </a></li>
+                <li><a href=""> Blog </a></li>
+                <li><a href=""> Contact us </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Help</h4>
+              <ul>
+                <li><a href=""> Contact US </a></li>
+                <li><a href=""> Terms and Condition </a></li>
+                <li><a href=""> Support policy </a></li>
+                <li><a href=""> Privacy </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Resources</h4>
+              <ul class="social-links">
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-fb.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-insta.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-wp.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-yotube.png" alt="img"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="copry-write">
+              <p>© Copyright 2024, All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end here -->
     <script src="./assets/js/ajax.googleapis.com_ajax_libs_jquery_3.6.3_jquery.min.js"></script>
-    <!--bootstrap js script -->
     <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--js script -->
     <script src="./assets/js/main.js"></script>
+
+    <script></script>
   </body>
 </html>

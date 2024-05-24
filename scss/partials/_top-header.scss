@@ -1,0 +1,57 @@
+.top-header-bar {
+  background: $bg-gradient;
+  padding: 8px 0;
+
+  .social-links {
+    ul {
+      width: 100%;
+      max-width: 111px;
+      display: flex;
+      align-items: center;
+
+      li {
+        width: 100%;
+        max-width: 18px;
+        margin-right: 13px;
+
+        &:nth-child(4n) {
+          margin-right: unset;
+        }
+      }
+    }
+  }
+
+  .shop {
+    text-align: -webkit-right;
+    ul {
+      width: 100%;
+      max-width: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      li {
+        width: 100%;
+        max-width: 30px;
+        margin-right: 18px;
+
+        &:nth-child(2n) {
+          margin-right: unset;
+        }
+
+        svg {
+          &:hover {
+            path {
+              color: $fill-brown-red;
+            }
+          }
+
+          path {
+            color: $white;
+            @include transition-standard;
+          }
+        }
+      }
+    }
+  }
+}

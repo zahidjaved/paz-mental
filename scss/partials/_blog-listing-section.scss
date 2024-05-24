@@ -1,0 +1,115 @@
+.blog-listing-section {
+  padding-bottom: 112px;
+
+  @include media-breakpoint-down(lg){
+    padding-bottom: 81px;
+  }
+
+  @include media-breakpoint-down(md){
+    left: 53%;
+
+  }
+
+  .sec-head {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .swiper {
+    padding-bottom: 85px;
+  }
+  .blog-listing-slider {
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 94%;
+      left: 50%;
+      @include media-breakpoint-down(lg){
+        left: 52%;
+      }
+
+      @include media-breakpoint-down(md){
+        left: 53%;
+
+      }
+
+    }
+
+    .swiper-button-prev {
+      left: 46%;
+
+      @include media-breakpoint-down(xl){
+        left: 45%;
+      }
+
+      @include media-breakpoint-down(lg){
+        left: 44%;
+      }
+      @include media-breakpoint-down(md){
+        left: 41%;
+
+      }
+      @include media-breakpoint-down(sm){
+        left: 40%;
+
+      }
+    }
+
+    .listing {
+      @extend .item-card;
+      width: 100%;
+      max-width: 410px;
+
+      @include media-breakpoint-down(lg) {
+        margin: 0 auto;
+      }
+
+      .media {
+        position: relative;
+        background-image: url(../assets/img/listing.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        padding-bottom: 68%;
+        border-radius: 11px 11px 0 0;
+        .label {
+          position: absolute;
+          border-radius: 100px;
+          padding: 8px 21px;
+          background: $fill-pink;
+          right: 3%;
+          top: 4%;
+
+          span {
+            color: $white;
+          }
+        }
+      }
+
+      .meta-data {
+        padding: 15px 25px 15px 22px;
+
+        h3 {
+          @include h3(24px, 36px);
+          margin-bottom: 6px;
+          padding-right: 44px;
+        }
+      }
+
+      .description {
+        p {
+          margin-bottom: 15px;
+        }
+
+        .list-cta {
+          text-align: end;
+          display: block;
+          @include transition-standard;
+
+          &:hover {
+            color: $fill-pink;
+          }
+        }
+      }
+    }
+  }
+}

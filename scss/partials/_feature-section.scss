@@ -1,0 +1,99 @@
+.feature-section {
+  padding: 92px 0 115px;
+  @include media-breakpoint-down(sm) {
+      padding: 60px 0 76px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .featured-slider {
+    padding-left: 35px;
+    padding-right: 23px;
+
+    @include media-breakpoint-down(sm) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .sec-item {
+      @extend .item-card;
+      width: 100%;
+      max-width: 276px;
+      padding: 36px 27px 18px 27px;
+      margin: 0 auto;
+      .media {
+        width: 100%;
+        max-width: 168px;
+        margin: 0 auto;
+        height: 100%;
+        min-height: 202px;
+        margin-bottom: 36px;
+      }
+      .meta-data {
+        h3 {
+          @include h3(24px, 36px);
+          text-transform: capitalize;
+        }
+
+        p {
+          height: 100%;
+          min-height: 93px;
+        }
+
+        .buy-cta {
+          @include primaryBtn(227px, 400, $white, $btn-bg);
+          background: linear-gradient(90deg, #ff6b6b 0%, #a500cd 93.08%);
+        }
+      }
+    }
+  }
+
+  .feature-cta {
+    text-align: center;
+    margin-top: 56px;
+
+    .product-cta {
+      @include primaryBtn(203px, 400, $brand-primary, transparent);
+      border: 1px solid $fill-brown-red;
+    }
+  }
+
+  .nav-pills {
+    width: 100%;
+    max-width: 774px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+  }
+  
+  .nav-item {
+    width: 100%;
+    max-width: 250px;
+    margin-right: 8px;
+    border-bottom: 1px solid $brand-primary;
+  
+    .nav-link {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: $brand-primary;
+    }
+  }
+
+
+
+
+  .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: $fill-brown-pink;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  background: transparent;
+}
+}
+
+
+
