@@ -1,0 +1,115 @@
+.get-in-touch {
+  padding-bottom: 120px;
+
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 45px;
+  }
+
+  .col-lg-6 {
+    background: $fill-white-v1;
+  }
+
+  .sec-content {
+    width: 100%;
+    max-width: 567px;
+    padding: 55px 5px 30px 50px;
+
+    @include media-breakpoint-down(xl) {
+      padding: 22px 4px 26px 40px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 21px 3px 24px 5px;
+    }
+    .description {
+      margin: 15px 0 35px;
+    }
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 23px;
+      border: none;
+      padding: 5px 0px 11px 0px;
+      border-bottom: 1px solid #e0e0e0;
+      background: transparent;
+      resize: none;
+      border-radius: unset;
+
+      &:focus {
+        outline: none;
+        box-shadow: unset;
+      }
+    }
+
+    .submit-btn {
+      text-align: center;
+      margin: 30px 0 30px;
+      input[type="submit"] {
+        width: 31%;
+        font-family: 'font-family: "Poppins", sans-serif';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        border: none;
+        background: $gradient;
+        border-radius: 8px;
+        @include transition-standard;
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        &:hover {
+          background: $fill-pink;
+        }
+      }
+    }
+
+    .form-links {
+      width: 100%;
+      max-width: 395px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .social {
+        width: 49%;
+        background: $white;
+        border-radius: 12px;
+        padding: 12px 16px 12px;
+        text-align: center;
+
+        img {
+          width: 100%;
+          max-width: 23px;
+          margin: 0 auto;
+        }
+
+        h5 {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          margin: 10px 0 3px;
+        }
+
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  .media {
+    width: 100%;
+    max-width: 648px;
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 33px;
+      margin: 0 auto;
+    }
+
+    img {
+      border-radius: 0px 12px 12px 0;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.page-hero {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  //     @include media-breakpoint-down(lg) {
+  //       min-height: 83vh;
+  // }
+
+  .content {
+    text-align: center;
+
+    h1{
+        text-transform: capitalize;
+    }
+
+    .description {
+      width: 100%;
+      max-width: 497px;
+      margin: 0 auto;
+
+      p {
+        @include paragraph(16px, 24px);
+        color: $brand-primary;
+        margin-top: 8px;
+      }
+    }
+  }
+}
