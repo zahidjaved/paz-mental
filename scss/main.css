@@ -8,7 +8,7 @@
 
 body {
   background: #ffffff;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   color: #000000;
 }
 
@@ -65,13 +65,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 h1 {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 64px;
@@ -105,7 +105,7 @@ h1 {
 }
 
 h2 {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 48px;
@@ -140,7 +140,7 @@ h2 {
 }
 
 h3 {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   color: #000000;
   font-size: 16px;
   font-weight: 600;
@@ -148,7 +148,7 @@ h3 {
 }
 
 p {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
@@ -156,7 +156,7 @@ p {
 }
 @media (max-width: 575.98px) {
   p {
-    font-family: ' "Poppins", sans-serif';
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -317,7 +317,7 @@ header .header-credention-cta .header-cta {
   height: 47px;
   width: 100%;
   max-width: 113px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -379,7 +379,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   }
 }
 .hero-section .content h5 {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -391,7 +391,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   margin-bottom: 16px;
 }
 .hero-section .content .description p {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -407,7 +407,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   height: 47px;
   width: 100%;
   max-width: 178px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -443,7 +443,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   height: 47px;
   width: 100%;
   max-width: 215px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #000000;
@@ -538,7 +538,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   height: 47px;
   width: 100%;
   max-width: 110px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -573,7 +573,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   height: 47px;
   width: 100%;
   max-width: 177px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -608,7 +608,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   height: 47px;
   width: 100%;
   max-width: 264px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #000000;
@@ -676,7 +676,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   margin-bottom: 36px;
 }
 .feature-section .featured-slider .sec-item .meta-data h3 {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   color: #000000;
   font-size: 24px;
   font-weight: 600;
@@ -696,7 +696,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   height: 47px;
   width: 100%;
   max-width: 227px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -734,7 +734,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   height: 47px;
   width: 100%;
   max-width: 203px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #000000;
@@ -814,7 +814,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   margin-bottom: 22px;
 }
 .benefit-section .sec-item h3 {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   color: #000000;
   font-size: 16px;
   font-weight: 600;
@@ -840,7 +840,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   height: 47px;
   width: 100%;
   max-width: 200px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -998,7 +998,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   padding: 15px 25px 15px 22px;
 }
 .blog-listing-section .blog-listing-slider .listing .meta-data h3 {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   color: #000000;
   font-size: 24px;
   font-weight: 600;
@@ -1105,7 +1105,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   margin-bottom: 40px;
 }
 .testimonail-section .testimonail-slider .sec-item .meta-deatial p {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1120,7 +1120,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   margin-bottom: 5px;
 }
 .testimonail-section .testimonail-slider .sec-item .meta-data p {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -1153,7 +1153,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   margin: 0 auto;
 }
 .news-letter-section .inner .content .description p {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -1182,7 +1182,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
 }
 .news-letter-section .inner .content .contact-form input[type=submit] {
   width: 31%;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
@@ -1226,7 +1226,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   margin: 0 auto;
 }
 .page-hero .content .description p {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1249,7 +1249,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   max-width: 223px;
 }
 .site-footer .description p {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
@@ -1279,7 +1279,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   margin-bottom: 15px;
 }
 .site-footer .links ul li a {
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
@@ -1534,7 +1534,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   height: 47px;
   width: 100%;
   max-width: 177px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -1575,7 +1575,7 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   height: 47px;
   width: 100%;
   max-width: 200px;
-  font-family: ' "Poppins", sans-serif';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #000000;
