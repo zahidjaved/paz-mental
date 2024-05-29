@@ -60,7 +60,7 @@
       }
 
       .health-industry-cta {
-        @include primaryBtn(264px, 400, $brand-primary, transparent);
+        @include primaryBtn(287px, 400, $brand-primary, transparent);
         border: 1px solid $fill-brown-red;
 
         @include media-breakpoint-down(md) {

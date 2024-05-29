@@ -51,7 +51,7 @@
         margin-bottom: 18px;
       }
       .hero-qoute-cta {
-        @include primaryBtn(215px, 400, $brand-primary, transparent);
+        @include primaryBtn(227px, 400, $brand-primary, transparent);
         border-radius: 23px;
         border: 1px solid $fill-brown-red;
         padding: 5px 12px;

@@ -1,0 +1,32 @@
+.featured {
+    padding: 0;
+  .sec-image {
+    padding: 0;
+  }
+  .sec-text {
+    padding: 40px 30px 40px 40px;
+    background: $gradient;
+    border-radius: 12px;
+    position: relative;
+    margin-top: -144px;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: -82px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: -14px;
+    }
+
+    h3 {
+      margin-bottom: 16px;
+      color: $white;
+    }
+
+    .description {
+      p {
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.about-us{
+    padding-bottom: 120px;
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 76px;
+      }
+
+    .about-text{
+        width: 100%;
+        max-width: 680px;
+        padding: 28px 24px 28px 25px;
+         background:  #F9F9F9;
+         border: 1px solid $fill-pink;
+         border-radius: 12px;
+         margin-left: 107px;
+         position: relative;
+         z-index: 3;
+
+         @include media-breakpoint-down(lg) {
+            margin: 0 auto;
+            margin-left: 0px;
+            margin-bottom: 25px;
+          }
+          @include media-breakpoint-down(md) {
+            text-align: center;
+          }
+        
+         .description{
+
+            p{
+                @include paragraph(16px,26px);   
+            }
+         }
+    }
+
+    .about-image{
+        width: 100%;
+        max-width: 650px;
+          @include media-breakpoint-down(lg) {
+             margin: 0 auto;
+          }
+    }
+}

@@ -34,7 +34,7 @@
       }
       .meta-data {
         h3 {
-          @include h3(24px, 36px);
+          @include h3(20px, 36px);
           text-transform: capitalize;
         }
 
@@ -72,10 +72,12 @@
     width: 100%;
     max-width: 250px;
     margin-right: 8px;
-    border-bottom: 1px solid $brand-primary;
+    display: flex;
+    border-bottom: 1px solid #000000;
+    justify-content: center;
   
     .nav-link {
-      font-size: 24px;
+      font-size: 21px;
       font-weight: 400;
       line-height: 24px;
       letter-spacing: -0.02em;
@@ -91,6 +93,7 @@
   color: $fill-brown-pink;
   font-weight: 600;
   letter-spacing: -0.02em;
+  font-size: 20px;
   background: transparent;
 }
 }
