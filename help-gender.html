@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!-- scss -->
+    <link rel="stylesheet" href="./scss/main.css" />
+
+    <title>paz mental-help-gender</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <!-- header-top start here -->
+    <div class="top-header-bar">
+      <div class="container-lg">
+        <div class="inner">
+          <div class="row">
+            <div class="col-6">
+              <div class="social-links">
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="./assets/img/facebook.png" alt="img" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./assets/img/insta.png" alt="img" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./assets/img/whatsapp.png" alt="img" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./assets/img/yotube.png" alt="img" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="shop">
+                <ul>
+                  <li>
+                    <a href="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-search"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-top end here -->
+    <!-- header start here -->
+    <header>
+      <div class="row">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-lg">
+            <a class="navbar-brand logo" href="javascript: void(0)">
+              <img src="./assets/img/logo.png" alt="img"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse toggle-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0" id="menu">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="javascript: void(0)"
+                    >Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript: void(0)"> about us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDarkDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    product
+                  </a>
+
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDarkDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDarkDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    help
+                  </a>
+
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDarkDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript: void(0)">benefits</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript: void(0)">contact us</a>
+                </li>
+              </ul>
+
+              <div class="header-credention-cta" id="mode-toggle">
+                <a class="header-cta" href="javascript: void(0)">Login</a>
+                <a class="header-cta" href="javascript: void(0)">Check In</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--pages hero section start here -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h1>Support Hub</h1>
+              <div class="description">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--pages hero section start here -->
+    <!-- advised section start here -->
+    <section class="advised">
+      <div class="container">
+        <div class="row align-items-center">
+          <h2 class="text-center mb-5">Protecting Women from Violence</h2>
+          <div class="col-lg-6">
+            <div class="sec-text">
+              <h3>Persistent Femicide in the Dominican Republic</h3>
+              <div class="description">
+                <p>
+                  Gender-related murders (femicide or feminicide) are also a
+                  real occurrence in the Dominican Republic. Despite decades of
+                  activism by women's rights organizations, as well as growing
+                  awareness and action by government officials, available
+                  evidence shows that
+                </p>
+              </div>
+            </div>
+            <div class="sec-text">
+              <h3>Have fun but stay safe!</h3>
+              <div class="description">
+                <p>
+                  You can have a great time hanging out with your friends in
+                  social settings like parties and night spots. While most
+                  parties are safe, occasionally something may happen that turns
+                  a girl's night out party into a dangerous place to be. It's
+                  important to understand how to be safe and what to do if
+                  something gets out of control.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="sec-image">
+              <img src="./assets/img/gender-help.png" alt="img" />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="sec-text">
+              <h3>GPS Panic Button for Safety</h3>
+              <div class="description">
+                <p>
+                  We provide the GPS tracker (watch) with a panic button to make
+                  emergency help calls and track the position of women and
+                  children in real time on via satellite Google Maps until they
+                  are safe.
+                </p>
+              </div>
+            </div>
+            <div class="sec-text">
+              <h3>PazMental GPS</h3>
+              <div class="description">
+                <p>
+                  PazMental GPS tracker monitoring is not an all-in-one solution
+                  to keeping women safe, but it is another tool in our arsenal
+                  as we seek to address the entire life cycle of violence
+                  through prevention, early intervention, response and recovery.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="sec-image">
+              <img src="./assets/img/gender-gps.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- advised section end here -->
+    <!--featured section start here  -->
+    <section class="featured">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center mb-5">Preventing Femicide</h2>
+          <div class="col-12">
+            <div class="sec-content">
+              <div class="sec-text mt-0">
+                <h3>Some groups of women and girls face greater risks.</h3>
+                <div class="description">
+                  <p>
+                    There remain significant limitations in data and information on gender-based killings of certain groups of women and girls. Women in the public sphere, including politicians, human rights defenders and journalists, are often targets of intentional acts of violence, both online and offline, some of which lead to fatal results and intentional murders. To prevent feminicide, it is essential that national authorities record complete data on victims. By identifying women and girls most at risk, countries can better inform prevention and protection mechanisms.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3">
+            <div class="sec-item">
+              <h3>Femicide is a universal problem</h3>
+              <div class="description">
+                <p>
+                  Like all forms of gender violence against women and girls,
+                  feminicide is a problem that affects all countries and
+                  territories in the world.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3">
+            <div class="sec-item">
+              <h3>
+                Women and girls are more likely to be killed by those closest to
+                them.
+              </h3>
+              <div class="description">
+                <p>
+                  More than 50,000 women and girls around the world were killed
+                  by their intimate partners or other family members (including
+                  fathers, mothers, uncles and brothers). This means that, on
+                  average, more than 133 women or girls are murdered every day
+                  by someone in their own family.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3">
+            <div class="sec-item">
+              <h3>
+                The true scale of feminicide is probably much larger.
+              </h3>
+              <div class="description">
+                <p>
+                    While the numbers presented in the report are alarmingly high, they are the tip of the iceberg. Too many victims of feminicide remain unaccounted for: With approximately four in ten intentional murders of women and girls, there is not enough information to identify them as gender-related murders due to national variations in criminal justice recording and investigation practices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3">
+            <div class="sec-item">
+              <h3>
+                 Femicide can and should be prevented.
+              </h3>
+              <div class="description">
+                <p>
+                    Gender-based murders and other forms of violence against women and girls are not inevitable. They can and should be prevented through primary prevention initiatives like PazMental's 'No Estas Sola', which focuses on transforming harmful social norms and engaging entire communities and societies to create zero tolerance towards violence against women.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--featured section end here  -->
+    <!-- new letter section start here -->
+    <section class="news-letter-section">
+      <div class="container">
+        <div class="inner">
+          <div class="row">
+            <div class="content">
+              <h2>We would love to hear from you</h2>
+              <div class="description">
+                <p>
+                  If you are curious about the features of a product, a service
+                  or even a journalist, we are ready to answer any and all
+                  questions.
+                </p>
+              </div>
+              <div class="contact-form">
+                <!-- form -->
+                <from action="#">
+                  <div class="wrapper form-group">
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="First name"
+                        required=""
+                      />
+                    </div>
+                    <div class="input-field">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email address"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required=""
+                  />
+                  <textarea
+                    name="user-message"
+                    id="user-message"
+                    cols="1"
+                    rows="1"
+                    class="form-control"
+                    placeholder="How can we help?"
+                  ></textarea>
+                  <div class="submit-btn">
+                    <input type="submit" value="Submit" class="submit_btn" />
+                  </div>
+                </from>
+                <!-- form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- new letter section end here -->
+    <!-- footer start here -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <div class="logo">
+              <a href="">
+                <img src="./assets/img/logo.png" alt="img" />
+              </a>
+            </div>
+            <div class="description">
+              <p>
+                Clarity gives you the blocks and components you need to create a
+                truly professional website.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Company</h4>
+              <ul>
+                <li><a href=""> home </a></li>
+                <li><a href=""> How it works </a></li>
+                <li><a href=""> Product </a></li>
+                <li><a href=""> Benefits </a></li>
+                <li><a href=""> Blog </a></li>
+                <li><a href=""> Contact us </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Help</h4>
+              <ul>
+                <li><a href=""> Contact US </a></li>
+                <li><a href=""> Terms and Condition </a></li>
+                <li><a href=""> Support policy </a></li>
+                <li><a href=""> Privacy </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Resources</h4>
+              <ul class="social-links">
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-fb.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-insta.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-wp.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-yotube.png" alt="img"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="copry-write">
+              <p>© Copyright 2024, All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end here -->
+    <script src="./assets/js/ajax.googleapis.com_ajax_libs_jquery_3.6.3_jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--js script -->
+    <script src="./assets/js/main.js"></script>
+
+    <script></script>
+  </body>
+</html>

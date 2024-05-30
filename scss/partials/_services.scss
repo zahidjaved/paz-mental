@@ -1,35 +1,33 @@
 .services {
   padding: 120px 0 120px;
 
-
-.remote-assistance{
+  .remote-assistance {
     flex-direction: row-reverse;
-     
 
-   .sec-wrapper{
-    margin-left: 48px;
-    margin-right: -90px;
-    position: relative;
-    z-index: 2;
-    padding-top: 4px;
+    .sec-wrapper {
+      margin-left: 48px;
+      margin-right: -90px;
+      position: relative;
+      z-index: 2;
+      padding-top: 4px;
 
-    @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(lg) {
         margin-left: 0px;
         margin-right: 0px;
       }
 
-    .sec-text{
+      .sec-text {
         padding: 35px 37px 35px 37px;
-        h3{
-            @include h3(21px, 29px); 
+        h3 {
+          @include h3(21px, 29px);
         }
+      }
     }
-   } 
-}
+  }
 
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(md) {
     padding: 55px 0 43px;
-}
+  }
 
   h2 {
     margin-bottom: 50px;
@@ -45,6 +43,8 @@
     }
   }
 
+  
+
   .sec-wrapper {
     margin-left: -64px;
     @include media-breakpoint-down(lg) {
@@ -59,7 +59,7 @@
       border: 1px solid $fill-brown-red;
       margin-bottom: 32px;
 
-      &:nth-child(2n){
+      &:nth-child(2n) {
         margin-bottom: 0px;
       }
 
@@ -76,9 +76,33 @@
 
       .description {
         p {
-            padding: 0;
+          padding: 0;
         }
       }
     }
   }
+
+  .cognitive-wrapper {
+    margin-right: -263px !important;
+    @include media-breakpoint-down(lg) {
+      margin-right: unset !important;
+    }
+
+    .sec-text {
+      width: 100% !important;
+      max-width: 591px !important;
+    }
+  }
+
+  .alzheimer-patients{
+    margin-left: -178px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 0px;
+    }
+
+    .sec-text{
+      max-width: 590px;
+    }
+  }
+
 }
