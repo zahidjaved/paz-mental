@@ -200,6 +200,11 @@ p {
   padding: 1px 6px;
   line-height: 48px;
   font-weight: 600 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .accordion-button:not(.collapsed) {
@@ -2195,6 +2200,9 @@ header .header-credention-cta .header-cta:nth-child(2n) {
 .product-listing .mobile-filter {
   overflow-y: scroll;
 }
+.product-listing .mobile-filter .accordion-item {
+  border: none;
+}
 .product-listing .mobile-filter .offcanvas {
   overflow-y: scroll;
 }
@@ -2220,7 +2228,10 @@ header .header-credention-cta .header-cta:nth-child(2n) {
     padding-left: 12px;
   }
 }
-.product-listing .filter .accordion-item span {
+.product-listing .filter .accordion-item {
+  border: none;
+}
+.product-listing .filter .accordion-item .pricing {
   padding: 8px 15px;
   margin-top: 16px;
   display: inline-block;

@@ -1,28 +1,31 @@
 .product-listing {
   padding-bottom: 60px;
 
-
-  .mobile-filter{
+  .mobile-filter {
     overflow-y: scroll;
 
-    .offcanvas{
-        overflow-y: scroll;
+    .accordion-item {
+      border: none;
     }
-   
-    .btn{
-        padding: 0;
-        &:focus{
-            outline: none;
-            box-shadow: none;
-        }
 
-        img{
-            width: 30px;
-        }
+    .offcanvas {
+      overflow-y: scroll;
     }
-    
-    .offcanvas-header{
-        justify-content: end;
+
+    .btn {
+      padding: 0;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      img {
+        width: 30px;
+      }
+    }
+
+    .offcanvas-header {
+      justify-content: end;
     }
   }
 
@@ -31,11 +34,12 @@
     padding-right: 12px;
 
     @include media-breakpoint-down(lg) {
-       padding-left: 12px;
-      }
+      padding-left: 12px;
+    }
 
     .accordion-item {
-      span {
+      border: none;
+      .pricing {
         padding: 8px 15px;
         margin-top: 16px;
         display: inline-block;
