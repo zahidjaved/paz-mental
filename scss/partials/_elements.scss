@@ -117,3 +117,29 @@ p {
 .overflow-hidden {
   overflow: hidden;
 }
+
+.breadcrumb-item{
+  a{
+    color: $text-color;
+  }
+}
+
+.active{
+  color: $brand-primary !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider, ">");
+}
+
+.accordion-button{
+  padding: 1px 6px;
+  $font-family-base: "Poppins", sans-serif;
+  line-height: 48px;
+  font-weight: 600 !important;
+}
+
+.accordion-button:not(.collapsed){
+  color: $brand-primary;
+  background: unset;
+}

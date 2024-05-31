@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!-- scss -->
+    <link rel="stylesheet" href="./scss/main.css" />
+
+    <title>paz mental-product-listing-page</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <!-- header start here -->
+    <header>
+      <!-- header-top start here -->
+      <div class="top-header-bar">
+        <div class="container-lg">
+          <div class="inner">
+            <div class="row">
+              <div class="col-6">
+                <div class="social-links">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/facebook.png" alt="img" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/insta.png" alt="img" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/whatsapp.png" alt="img" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/yotube.png" alt="img" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="shop">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-search"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-cart"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header-top end here -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-lg">
+          <a class="navbar-brand logo" href="javascript: void(0)">
+            <img src="./assets/img/logo.png" alt="img"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse toggle-menu"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0" id="menu">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="javascript: void(0)"
+                  >Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript: void(0)"> about us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  product
+                </a>
+
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  help
+                </a>
+
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript: void(0)">benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript: void(0)">contact us</a>
+              </li>
+            </ul>
+
+            <div class="header-credention-cta" id="mode-toggle">
+              <a class="header-cta" href="javascript: void(0)">Login</a>
+              <a class="header-cta" href="javascript: void(0)">Check In</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--pages hero section start here -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h1>Products</h1>
+              <div class="description">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--pages hero section start here -->
+    <!-- product-listing section start here -->
+    <section class="product-listing">
+           <!-- mobile filter -->
+           <div class="container">
+            <div class="mobile-filter d-block d-lg-none">
+                <a
+                  class="btn mb-3"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
+                <img src="./assets/img/cat-filter.png" alt="img">
+                </a>
+                <div
+                  class="offcanvas offcanvas-start px-3"
+                  tabindex="-1"
+                  id="offcanvasExample"
+                  aria-labelledby="offcanvasExampleLabel"
+                >
+                  <div class="offcanvas-header">
+                    <button
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+    
+                  <!-- accordion -->
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Categories
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                      >
+                        <div class="accordion-body">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault1"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault1">
+                              Smartwatches
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault2"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault2">
+                              Bracelets
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault3"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault3">
+                              Mobile Alert
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault4"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault4">
+                              Home Medical Alert
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault5"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault5">
+                              All-in-One Medical Alert
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault6"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault6">
+                              All Categories
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="true"
+                          aria-controls="collapseTwo"
+                        >
+                          Colors
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingTwo"
+                      >
+                        <div class="accordion-body">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault1"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault1">
+                              black
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault2"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault2">
+                              blue
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault3"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault3">
+                              orange
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault4"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault4">
+                              red
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault5"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault5">
+                              green
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault6"
+                            />
+                            <label class="form-check-label" for="flexCheckDefault6">
+                              yellow
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Gender
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingThree"
+                    >
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault1"
+                          />
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault1"
+                          />
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Female
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault1"
+                          />
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Both
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        Metal type
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingFour"
+                    >
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault1"
+                          />
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            silver
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault2"
+                          />
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            abc
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault3"
+                          />
+                          <label class="form-check-label" for="flexRadioDefault3">
+                            Both
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        Price
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFive"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingFive"
+                    >
+                      <div class="accordion-body">
+                        <input
+                          type="range"
+                          class="form-range"
+                          min="0"
+                          max="50"
+                          step="0"
+                          id="customRange3"
+                        />
+                        <span> $ 20 </span> <span> $ 20 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <!-- accordion -->
+                  <!-- filter -->
+            </div>
+        </div>
+        </div>
+          <!-- mobile filter -->     
+      <div class="container">  
+        <div class="row">
+          <div class="col-lg-3  d-none d-lg-block ">
+            <div class="filter">
+              <div class="breakcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Products
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="sec-head">
+                <h4>Filters</h4>
+                <a href="">Clear All filter</a>
+              </div>
+              <!-- accor -->
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Categories
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                  >
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault1"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault1">
+                          Smartwatches
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault2"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault2">
+                          Bracelets
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault3"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault3">
+                          Mobile Alert
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault4"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault4">
+                          Home Medical Alert
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault5"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault5">
+                          All-in-One Medical Alert
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault6"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault6">
+                          All Categories
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo"
+                    >
+                      Colors
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingTwo"
+                  >
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault1"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault1">
+                          black
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault2"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault2">
+                          blue
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault3"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault3">
+                          orange
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault4"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault4">
+                          red
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault5"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault5">
+                          green
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault6"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault6">
+                          yellow
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Gender
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingThree"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Male
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Female
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Both
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Metal type
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingFour"
+                >
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        silver
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        abc
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault3"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault3">
+                        Both
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Price
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingFive"
+                >
+                  <div class="accordion-body">
+                    <input
+                      type="range"
+                      class="form-range"
+                      min="0"
+                      max="50"
+                      step="0"
+                      id="customRange3"
+                    />
+                    <span> $ 20 </span> <span> $ 20 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion -->
+
+      
+          </div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-6">
+                <div class="sec-head">
+                  <h3>All Products</h3>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="head-categories">
+                  <p>Sort By</p>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Popular</option>
+                    <option value="1">Latest</option>
+                    <option value="2">Brand</option>
+                    <option value="3">Simple</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-6 col-xl-4">
+                    <a href="">
+                      <div class="items">
+                        <div class="image">
+                          <img src="./assets/img/home.png" alt="img" />
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-body">
+                          <h3>Home medical alert</h3>
+
+                          <div class="price">
+                            <h3 class="colored">$24-36</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-6 col-xl-4">
+                    <a href="">
+                      <div class="items">
+                        <div class="image">
+                          <img src="./assets/img/home.png" alt="img" />
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-body">
+                          <h3>Home medical alert</h3>
+
+                          <div class="price">
+                            <h3 class="colored">$24-36</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-6 col-xl-4">
+                    <a href="">
+                      <div class="items">
+                        <div class="image">
+                          <img src="./assets/img/home.png" alt="img" />
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-body">
+                          <h3>Home medical alert</h3>
+
+                          <div class="price">
+                            <h3 class="colored">$24-36</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-6 col-xl-4">
+                    <a href="">
+                      <div class="items">
+                        <div class="image">
+                          <img src="./assets/img/home.png" alt="img" />
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-body">
+                          <h3>Home medical alert</h3>
+
+                          <div class="price">
+                            <h3 class="colored">$24-36</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-6 col-xl-4">
+                    <a href="">
+                      <div class="items">
+                        <div class="image">
+                          <img src="./assets/img/home.png" alt="img" />
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-body">
+                          <h3>Home medical alert</h3>
+
+                          <div class="price">
+                            <h3 class="colored">$24-36</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-6 col-xl-4">
+                    <a href="">
+                      <div class="items">
+                        <div class="image">
+                          <img src="./assets/img/home.png" alt="img" />
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-body">
+                          <h3>Home medical alert</h3>
+
+                          <div class="price">
+                            <h3 class="colored">$24-36</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-6 col-xl-4">
+                    <a href="">
+                      <div class="items">
+                        <div class="image">
+                          <img src="./assets/img/home.png" alt="img" />
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-body">
+                          <h3>Home medical alert</h3>
+
+                          <div class="price">
+                            <h3 class="colored">$24-36</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-6 col-xl-4">
+                    <a href="">
+                      <div class="items">
+                        <div class="image">
+                          <img src="./assets/img/home.png" alt="img" />
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-body">
+                          <h3>Home medical alert</h3>
+
+                          <div class="price">
+                            <h3 class="colored">$24-36</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-lg-6 col-xl-4">
+                    <a href="">
+                      <div class="items">
+                        <div class="image">
+                          <img src="./assets/img/home.png" alt="img" />
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-body">
+                          <h3>Home medical alert</h3>
+
+                          <div class="price">
+                            <h3 class="colored">$24-36</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product-listing section end here -->
+    <!-- footer start here -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <div class="logo">
+              <a href="">
+                <img src="./assets/img/logo.png" alt="img" />
+              </a>
+            </div>
+            <div class="description">
+              <p>
+                Clarity gives you the blocks and components you need to create a
+                truly professional website.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Company</h4>
+              <ul>
+                <li><a href=""> home </a></li>
+                <li><a href=""> How it works </a></li>
+                <li><a href=""> Product </a></li>
+                <li><a href=""> Benefits </a></li>
+                <li><a href=""> Blog </a></li>
+                <li><a href=""> Contact us </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Help</h4>
+              <ul>
+                <li><a href=""> Contact US </a></li>
+                <li><a href=""> Terms and Condition </a></li>
+                <li><a href=""> Support policy </a></li>
+                <li><a href=""> Privacy </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Resources</h4>
+              <ul class="social-links">
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-fb.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-insta.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-wp.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-yotube.png" alt="img"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="copry-write">
+              <p>© Copyright 2024, All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end here -->
+    <script src="./assets/js/ajax.googleapis.com_ajax_libs_jquery_3.6.3_jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--js script -->
+    <script src="./assets/js/main.js"></script>
+
+    <script></script>
+  </body>
+</html>

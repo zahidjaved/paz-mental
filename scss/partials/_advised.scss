@@ -36,6 +36,13 @@
       @include h3(24px, 36px);
       margin-bottom: 8px;
     }
+
+    ul{
+      padding-left: 30px;
+      li{
+        list-style-type: disc;
+      }
+    }
   }
 
   .sec-image {

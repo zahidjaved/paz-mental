@@ -184,6 +184,29 @@ p {
   overflow: hidden;
 }
 
+.breadcrumb-item a {
+  color: #7d7d7d;
+}
+
+.active {
+  color: #000000 !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider, ">");
+}
+
+.accordion-button {
+  padding: 1px 6px;
+  line-height: 48px;
+  font-weight: 600 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000000;
+  background: unset;
+}
+
 .top-header-bar {
   background: linear-gradient(90deg, #ff6b6b 0%, #a500cd 53%, #0101c5 99%);
   padding: 8px 0;
@@ -1442,6 +1465,12 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   line-height: 36px;
   margin-bottom: 8px;
 }
+.advised .sec-text ul {
+  padding-left: 30px;
+}
+.advised .sec-text ul li {
+  list-style-type: disc;
+}
 .advised .sec-image {
   width: 100%;
   max-width: 577px;
@@ -1493,6 +1522,9 @@ header .header-credention-cta .header-cta:nth-child(2n) {
 .latest-articles .sec-text .article-btns span {
   color: #7d7d7d;
 }
+.latest-articles .sec-text .article-btns span .author {
+  width: 37px;
+}
 .latest-articles .sec-text .article-btns a {
   font-size: 14px;
   font-weight: 400;
@@ -1510,6 +1542,12 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   width: 13px;
   margin-left: 4px;
 }
+.latest-articles .sec-text .article-btns ul {
+  display: flex;
+}
+.latest-articles .sec-text .article-btns ul img {
+  width: 25px;
+}
 
 .post-categories {
   padding-bottom: 120px;
@@ -1518,6 +1556,14 @@ header .header-credention-cta .header-cta:nth-child(2n) {
   .post-categories {
     padding-bottom: 40px;
   }
+}
+.post-categories h2 {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 23px;
 }
 .post-categories .nav-pills {
   margin-bottom: 26px;
@@ -2141,4 +2187,104 @@ header .header-credention-cta .header-cta:nth-child(2n) {
 .solution .sec-text .description p {
   color: #ffffff;
   line-height: 25px;
+}
+
+.product-listing {
+  padding-bottom: 60px;
+}
+.product-listing .mobile-filter {
+  overflow-y: scroll;
+}
+.product-listing .mobile-filter .offcanvas {
+  overflow-y: scroll;
+}
+.product-listing .mobile-filter .btn {
+  padding: 0;
+}
+.product-listing .mobile-filter .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.product-listing .mobile-filter .btn img {
+  width: 30px;
+}
+.product-listing .mobile-filter .offcanvas-header {
+  justify-content: end;
+}
+.product-listing .filter {
+  border-right: 2px solid #f2f2f2;
+  padding-right: 12px;
+}
+@media (max-width: 991.98px) {
+  .product-listing .filter {
+    padding-left: 12px;
+  }
+}
+.product-listing .filter .accordion-item span {
+  padding: 8px 15px;
+  margin-top: 16px;
+  display: inline-block;
+  border: 1px solid #f2f2f2;
+  border-radius: 6px;
+}
+@media (max-width: 767.98px) {
+  .product-listing {
+    padding-bottom: 10px;
+  }
+}
+.product-listing .head-categories {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+.product-listing .head-categories select {
+  width: 100%;
+  max-width: 128px;
+  margin-left: 5px;
+}
+.product-listing .items {
+  padding: 21px 12px 21px;
+  border: 1px solid #ff6b6b;
+  border-radius: 16px;
+  margin-bottom: 70px;
+}
+.product-listing .items .image {
+  width: 100%;
+  max-width: 168px;
+  margin: 0 auto;
+}
+.product-listing .items .divider {
+  padding: 1px;
+  background: linear-gradient(90deg, #FF6B6B 0%, #A500CD 100%);
+  margin-top: 8px;
+}
+.product-listing .items .card-body h3 {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+.product-listing .items .card-body .colored {
+  color: #ff6b6b;
+}
+.product-listing .sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-listing .sec-head h3 {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.product-listing .sec-head h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 32px 0 24px;
 }/*# sourceMappingURL=main.css.map */
