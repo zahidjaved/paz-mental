@@ -111,4 +111,14 @@
       margin: 32px 0 24px;
     }
   }
+
+  .list-pagination{
+    display: flex;
+    justify-content: flex-end;
+
+    // .page-link{
+    //   border: none;
+    //   border-radius: 50%;
+    // }
+  }
 }

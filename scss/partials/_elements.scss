@@ -91,8 +91,7 @@ h5 {
 p {
   @include paragraph(16px, 23px);
 
-  
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     @include paragraph(14px, 22px);
   }
 }
@@ -108,44 +107,66 @@ p {
   width: 50px !important;
 }
 
-
 .swiper-button-next:after,
 .swiper-button-prev:after {
   display: none;
+}
+
+.related-product,.product-listing {
+
+
+  .swiper{
+    padding-left: 30px !important;
+    padding-right: 29px !important;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: block;
+    color: black;
+    font-size: 29px;
+    font-weight: $fw-black;
+    .swiper-button-next {
+      right: -60px !important;
+    }
+
+    .swiper-button-prev {
+      left: -60px !important;
+    }
+  }
 }
 
 .overflow-hidden {
   overflow: hidden;
 }
 
-.breadcrumb-item{
-  a{
+.breadcrumb-item {
+  a {
     color: $text-color;
   }
 }
 
-.active{
+.active {
   color: $brand-primary !important;
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   content: var(--bs-breadcrumb-divider, ">");
 }
 
-.accordion-button{
+.accordion-button {
   padding: 1px 6px;
   $font-family-base: "Poppins", sans-serif;
   line-height: 48px;
   font-weight: 600 !important;
-  border-top: 1px solid rgba(0, 0, 0, .125);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
 
-  &:focus{
+  &:focus {
     outline: none;
     box-shadow: none;
   }
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   color: $brand-primary;
   background: unset;
 }

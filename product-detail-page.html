@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!-- scss -->
+    <link rel="stylesheet" href="./scss/main.css" />
+    <!-- fontawesome -->
+
+    <title>paz mental-product-detail-page</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <!-- header start here -->
+    <header>
+      <!-- header-top start here -->
+      <div class="top-header-bar">
+        <div class="container-lg">
+          <div class="inner">
+            <div class="row">
+              <div class="col-6">
+                <div class="social-links">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/facebook.png" alt="img" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/insta.png" alt="img" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/whatsapp.png" alt="img" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/yotube.png" alt="img" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="shop">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-search"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-cart"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header-top end here -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-lg">
+          <a class="navbar-brand logo" href="javascript: void(0)">
+            <img src="./assets/img/logo.png" alt="img"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse toggle-menu"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0" id="menu">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="javascript: void(0)"
+                  >Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript: void(0)"> about us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  product
+                </a>
+
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  help
+                </a>
+
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript: void(0)">benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript: void(0)">contact us</a>
+              </li>
+            </ul>
+
+            <div class="header-credention-cta" id="mode-toggle">
+              <a class="header-cta" href="javascript: void(0)">Login</a>
+              <a class="header-cta" href="javascript: void(0)">Check In</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- product-detail section start here -->
+    <section class="product-detail">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- breadcrumb here -->
+            <div class="breakcrumb">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+
+                  <li class="breadcrumb-item" aria-current="page">Products</li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Medical alert Smart watch
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <!-- breadcrumb here -->
+            <!-- thumb slider here -->
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/img/smart-watch.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/smart-watch.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/smart-watch.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/smart-watch.png" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper thumbs-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/img/smart-watch.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/smart-watch.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/smart-watch.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/smart-watch.png" />
+                </div>
+              </div>
+            </div>
+            <!-- thumb slider here -->
+          </div>
+          <div class="col-lg-6">
+            <div class="product-single-meta">
+              <div class="sec-text">
+                <h2>Medical alert Smart Watch</h2>
+                <span class="fon-icons"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fon-icons"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fon-icons"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fon-icons"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+
+                <span class="review">(145 reviews)</span>
+              </div>
+              <div class="post-categories">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      Product
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      QR Escaname
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-contact-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-contact"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-contact"
+                      aria-selected="false"
+                    >
+                      Engraving
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                  >
+                    <div class="description">
+                      <p>
+                        A medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                  >
+                    <div class="description">
+                      <p>
+                        A medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-contact"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab"
+                  >
+                    <div class="description">
+                      <p>
+                        A medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional smartwatchA
+                        medical alert system in a multifunctional
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="head-categories w-50 mb-4">
+                <h3 class="text-capitalize mb-3">length</h3>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>choose an option</option>
+                  <option value="1">Latest</option>
+                  <option value="2">Brand</option>
+                  <option value="3">Simple</option>
+                </select>
+              </div>
+        
+            <h3 class="mb-4">Price:  <span>$ 28</span></h3>
+            <h3 class="mb-4">Color: <span> black blue yellow</span></h3>
+            <div class="quantity-container mb-4">
+                <h3 class="me-3">Qty:</h3>
+                <div class="field">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increment">+</button>
+                </div>
+            </div>
+               <div class="product-btn">
+                <a href="">load More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product-detail section end here -->
+    <!-- post categories section start here -->
+    <section class="post-categories">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="sec-wrapper">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Description
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Additional information
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    Reviews
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                >
+                  <div class="description">
+                    <p>
+                      A medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional A medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                >
+                  <div class="description">
+                    <p>
+                      A medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional A medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
+                >
+                  <div class="description">
+                    <p>
+                      A medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional smartwatchA
+                      medical alert system in a multifunctional A medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional smartwatchA medical alert
+                      system in a multifunctional
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post-btns">
+              <a href="">load More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- post categories section end here -->
+    <!-- related product section start here -->
+    <section class="product-listing">
+      <div class="container">
+        <h2 class="text-center mb-4">Related Product</h2>
+        <div class="row">
+          <div class="col-12">
+            <!-- swiper js -->
+            <div class="swiper related-product">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="">
+                    <div class="items">
+                      <div class="image">
+                        <img src="./assets/img/home.png" alt="img" />
+                      </div>
+                      <div class="divider"></div>
+                      <div class="card-body">
+                        <h3>Home medical alert</h3>
+
+                        <div class="price">
+                          <h3 class="colored">$24-36</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <div class="items">
+                      <div class="image">
+                        <img src="./assets/img/home.png" alt="img" />
+                      </div>
+                      <div class="divider"></div>
+                      <div class="card-body">
+                        <h3>Home medical alert</h3>
+
+                        <div class="price">
+                          <h3 class="colored">$24-36</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <div class="items">
+                      <div class="image">
+                        <img src="./assets/img/home.png" alt="img" />
+                      </div>
+                      <div class="divider"></div>
+                      <div class="card-body">
+                        <h3>Home medical alert</h3>
+
+                        <div class="price">
+                          <h3 class="colored">$24-36</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <div class="items">
+                      <div class="image">
+                        <img src="./assets/img/home.png" alt="img" />
+                      </div>
+                      <div class="divider"></div>
+                      <div class="card-body">
+                        <h3>Home medical alert</h3>
+
+                        <div class="price">
+                          <h3 class="colored">$24-36</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <div class="items">
+                      <div class="image">
+                        <img src="./assets/img/home.png" alt="img" />
+                      </div>
+                      <div class="divider"></div>
+                      <div class="card-body">
+                        <h3>Home medical alert</h3>
+
+                        <div class="price">
+                          <h3 class="colored">$24-36</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <div class="items">
+                      <div class="image">
+                        <img src="./assets/img/home.png" alt="img" />
+                      </div>
+                      <div class="divider"></div>
+                      <div class="card-body">
+                        <h3>Home medical alert</h3>
+
+                        <div class="price">
+                          <h3 class="colored">$24-36</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <div class="items">
+                      <div class="image">
+                        <img src="./assets/img/home.png" alt="img" />
+                      </div>
+                      <div class="divider"></div>
+                      <div class="card-body">
+                        <h3>Home medical alert</h3>
+
+                        <div class="price">
+                          <h3 class="colored">$24-36</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <div class="items">
+                      <div class="image">
+                        <img src="./assets/img/home.png" alt="img" />
+                      </div>
+                      <div class="divider"></div>
+                      <div class="card-body">
+                        <h3>Home medical alert</h3>
+
+                        <div class="price">
+                          <h3 class="colored">$24-36</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- swiper js -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- related product section end here -->
+    <!-- new letter section start here -->
+    <section class="news-letter-section">
+      <div class="container">
+        <div class="inner">
+          <div class="row">
+            <div class="content">
+              <h2>We would love to hear from you</h2>
+              <div class="description">
+                <p>
+                  If you are curious about the features of a product, a service
+                  or even a journalist, we are ready to answer any and all
+                  questions.
+                </p>
+              </div>
+              <div class="contact-form">
+                <!-- form -->
+                <from action="#">
+                  <div class="wrapper form-group">
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="First name"
+                        required=""
+                      />
+                    </div>
+                    <div class="input-field">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email address"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required=""
+                  />
+                  <textarea
+                    name="user-message"
+                    id="user-message"
+                    cols="1"
+                    rows="1"
+                    class="form-control"
+                    placeholder="How can we help?"
+                  ></textarea>
+                  <div class="submit-btn">
+                    <input type="submit" value="Submit" class="submit_btn" />
+                  </div>
+                </from>
+                <!-- form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- new letter section end here -->
+
+    <!-- footer start here -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <div class="logo">
+              <a href="">
+                <img src="./assets/img/logo.png" alt="img" />
+              </a>
+            </div>
+            <div class="description">
+              <p>
+                Clarity gives you the blocks and components you need to create a
+                truly professional website.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Company</h4>
+              <ul>
+                <li><a href=""> home </a></li>
+                <li><a href=""> How it works </a></li>
+                <li><a href=""> Product </a></li>
+                <li><a href=""> Benefits </a></li>
+                <li><a href=""> Blog </a></li>
+                <li><a href=""> Contact us </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Help</h4>
+              <ul>
+                <li><a href=""> Contact US </a></li>
+                <li><a href=""> Terms and Condition </a></li>
+                <li><a href=""> Support policy </a></li>
+                <li><a href=""> Privacy </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Resources</h4>
+              <ul class="social-links">
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-fb.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-insta.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-wp.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-yotube.png" alt="img"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="copry-write">
+              <p>© Copyright 2024, All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end here -->
+    <script src="./assets/js/ajax.googleapis.com_ajax_libs_jquery_3.6.3_jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--js script -->
+    <script src="./assets/js/main.js"></script>
+
+    <script></script>
+  </body>
+</html>

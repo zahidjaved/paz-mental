@@ -9,8 +9,6 @@ var swiper = new Swiper(".featured-slider", {
     prevEl: ".swiper-button-prev",
   },
 
-
-
   breakpoints: {
     1920: {
       slidesPerView: 4,
@@ -33,12 +31,7 @@ var swiper = new Swiper(".featured-slider", {
       slidesPerView: 1,
     },
   },
-
-
-
 });
-
-
 
 var swiper = new Swiper(".testimonail-swiper-slider", {
   loop: true,
@@ -85,8 +78,6 @@ var swiper = new Swiper(".blog-listing-slider", {
     prevEl: ".swiper-button-prev",
   },
 
-
-
   breakpoints: {
     1920: {
       slidesPerView: 3,
@@ -108,8 +99,69 @@ var swiper = new Swiper(".blog-listing-slider", {
       slidesPerView: 1,
     },
   },
-
-
-
 });
 
+// related product swiper js
+var swiper = new Swiper(".related-product", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    1280: {
+      slidesPerView: 4,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+    667: {
+      slidesPerView: 2,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  },
+});
+
+// thumbs gallery slider
+var swiper = new Swiper(".thumbs-slider", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
+// jquery product quantity
+$(document).ready(function () {
+  $(".increment").click(function () {
+    var $quantity = $(this).siblings(".quantity");
+    var currentVal = parseInt($quantity.val());
+    if (!isNaN(currentVal)) {
+      $quantity.val(currentVal + 1);
+    }
+  });
+
+  $(".decrement").click(function () {
+    var $quantity = $(this).siblings(".quantity");
+    var currentVal = parseInt($quantity.val());
+    if (!isNaN(currentVal) && currentVal > 1) {
+      $quantity.val(currentVal - 1);
+    }
+  });
+});

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!-- scss -->
+    <link rel="stylesheet" href="./scss/main.css" />
+
+    <title>paz mental-filled-form</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <!-- header start here -->
+    <header>
+      <!-- header-top start here -->
+      <div class="top-header-bar">
+        <div class="container-lg">
+          <div class="inner">
+            <div class="row">
+              <div class="col-6">
+                <div class="social-links">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/facebook.png" alt="img" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/insta.png" alt="img" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/whatsapp.png" alt="img" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="./assets/img/yotube.png" alt="img" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="shop">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-search"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-cart"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header-top end here -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-lg">
+          <a class="navbar-brand logo" href="javascript: void(0)">
+            <img src="./assets/img/logo.png" alt="img"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse toggle-menu"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0" id="menu">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="javascript: void(0)"
+                  >Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript: void(0)"> about us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  product
+                </a>
+
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  help
+                </a>
+
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript: void(0)">benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript: void(0)">contact us</a>
+              </li>
+            </ul>
+
+            <div class="header-credention-cta" id="mode-toggle">
+              <a class="header-cta" href="javascript: void(0)">Login</a>
+              <a class="header-cta" href="javascript: void(0)">Check In</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--pages hero section start here -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h1>Personal inforamtion</h1>
+              <div class="description">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--pages hero section start here -->
+    <!-- profile information section start here  -->
+    <section class="profile-info">
+      <div class="container">
+        <div class="inner">
+          <div class="row">
+            <div class="col-12">
+              <div class="cover-image">
+                <div class="media">
+                  <img src="./assets/img/mediaa.png" alt="img" />
+                  <p>change image</p>
+                </div>
+                <h3>Donald trump</h3>
+                <p>Med Alert Important information</p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-title">
+                <h3>personal Information</h3>
+              </div>
+              <div class="form-list-data">
+                <ul>
+                  <li>
+                    Emergency Phone no: <span class="ms-4">0000 000 0000</span>
+                  </li>
+                  <li>Gender: <span class="ms-4">Male</span></li>
+                  <li>
+                    Social Security No: <span class="ms-4">e.g xxxxxxxxx</span>
+                  </li>
+                  <li>Blood Type: <span class="ms-4">AB+</span></li>
+                  <li>Email: <span class="ms-4">abc@example.com</span></li>
+                  <li>Date of Birth: <span class="ms-4">24 Mar 1978</span></li>
+                  <li>
+                    Alternative Mailbox<span class="ms-4">abc@example.com</span>
+                  </li>
+                  <li>Mental Status: <span class="ms-4">Normal</span></li>
+                  <li>Marital Status: <span class="ms-4">Married</span></li>
+                  <li>
+                    Address: <span class="ms-4">e.g 4 st park view city</span>
+                  </li>
+                  <li>
+                    Enable Email Notification: <span class="ms-4">Allow</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="form-title">
+                <h3>Family Doctor Detail</h3>
+              </div>
+              <div class="form-list-data">
+                <ul>
+                  <li>Doctor Name: <span class="ms-4">alex willamson</span></li>
+                  <li>Phone no: <span class="ms-4">0000 000 0000</span></li>
+                  <li>Email: <span class="ms-4">abc@example.com</span></li>
+                </ul>
+              </div>
+              <div class="form-title">
+                <h3>Past Medical history</h3>
+              </div>
+              <div class="form-list-data">
+                <ul>
+                  <li>Past Diagnosis: <span class="ms-4">e.g diabetics</span></li>
+                  <li>Treatment History <span class="ms-4">e.g diabetics</span></li>
+                  <li>Organ Transplants <span class="ms-4">e.g liver</span></li>
+                  <li>Organ Remove <span class="ms-4">e.g kidney</span></li>
+                  <li>Organ Transplants <span class="ms-4">e.g liver</span></li>
+                </ul>
+              </div>
+
+              <div class="form-title">
+                <h3>current Medical Details </h3>
+              </div>
+              <div class="form-list-data">
+                <ul>
+                  <li>
+                    Emergency Phone no: <span class="ms-4">0000 000 0000</span>
+                  </li>
+                  <li>Gender: <span class="ms-4">Male</span></li>
+                  <li>
+                    Social Security No: <span class="ms-4">e.g xxxxxxxxx</span>
+                  </li>
+                  <li>Blood Type: <span class="ms-4">AB+</span></li>
+                  <li>Email: <span class="ms-4">abc@example.com</span></li>
+                  <li>Date of Birth: <span class="ms-4">24 Mar 1978</span></li>
+                  <li>
+                    Alternative Mailbox<span class="ms-4">abc@example.com</span>
+                  </li>
+                  <li>Mental Status: <span class="ms-4">Normal</span></li>
+                  <li>Marital Status: <span class="ms-4">Married</span></li>
+                  <li>
+                    Address: <span class="ms-4">e.g 4 st park view city</span>
+                  </li>
+                  <li>
+                    Enable Email Notification: <span class="ms-4">Allow</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- profile information section end here  -->
+    <!-- new letter section start here -->
+    <section class="news-letter-section">
+      <div class="container">
+        <div class="inner">
+          <div class="row">
+            <div class="content">
+              <h2>We would love to hear from you</h2>
+              <div class="description">
+                <p>
+                  If you are curious about the features of a product, a service
+                  or even a journalist, we are ready to answer any and all
+                  questions.
+                </p>
+              </div>
+              <div class="contact-form">
+                <!-- form -->
+                <from action="#">
+                  <div class="wrapper form-group">
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="First name"
+                        required=""
+                      />
+                    </div>
+                    <div class="input-field">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email address"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required=""
+                  />
+                  <textarea
+                    name="user-message"
+                    id="user-message"
+                    cols="1"
+                    rows="1"
+                    class="form-control"
+                    placeholder="How can we help?"
+                  ></textarea>
+                  <div class="submit-btn">
+                    <input type="submit" value="Submit" class="submit_btn" />
+                  </div>
+                </from>
+                <!-- form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- new letter section end here -->
+    <!-- footer start here -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <div class="logo">
+              <a href="">
+                <img src="./assets/img/logo.png" alt="img" />
+              </a>
+            </div>
+            <div class="description">
+              <p>
+                Clarity gives you the blocks and components you need to create a
+                truly professional website.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Company</h4>
+              <ul>
+                <li><a href=""> home </a></li>
+                <li><a href=""> How it works </a></li>
+                <li><a href=""> Product </a></li>
+                <li><a href=""> Benefits </a></li>
+                <li><a href=""> Blog </a></li>
+                <li><a href=""> Contact us </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Help</h4>
+              <ul>
+                <li><a href=""> Contact US </a></li>
+                <li><a href=""> Terms and Condition </a></li>
+                <li><a href=""> Support policy </a></li>
+                <li><a href=""> Privacy </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="links">
+              <h4>Resources</h4>
+              <ul class="social-links">
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-fb.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-insta.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-wp.png" alt="img"
+                  /></a>
+                </li>
+                <li>
+                  <a class="footer-social-links" href="javascript: void(0)">
+                    <img src="./assets/img/footer-yotube.png" alt="img"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="copry-write">
+              <p>© Copyright 2024, All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end here -->
+    <script src="./assets/js/ajax.googleapis.com_ajax_libs_jquery_3.6.3_jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--js script -->
+    <script src="./assets/js/main.js"></script>
+
+    <script></script>
+  </body>
+</html>
